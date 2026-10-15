@@ -384,6 +384,50 @@ function vScriptureChapter(bookId, chN) {
   <p class="sub"><a href="#/scripture/${b.id}" style="color:var(--gold)">\u2190 ${b.name}</a> · <a href="#/scripture" style="color:var(--gold)">All books</a></p>${verses}`;
 }
 
+/* ---------- search ---------- */
+let SEARCH_INDEX = null;
+function buildSearchIndex() {
+  if (SEARCH_INDEX) return SEARCH_INDEX;
+  const idx = [];
+  const add = (icon, type, title, desc, href, extra) => idx.push({ icon, type, title, desc, href, hay: (title + " " + desc + " " + (extra || "")).toLowerCase() });
+  if (typeof TILES !== "undefined") TILES.forEach(t => add(t.icon, "Section", t.t, t.d, t.h, ""));
+  if (typeof HEARTH_LESSONS !== "undefined") HEARTH_LESSONS.forEach(l => {
+    const steps = (l.steps || []).map(x => x.t + " " + (x.d || "").slice(0, 200)).join(" ");
+    add(l.icon || "\uD83D\uDD25", "Lesson", l.title, l.intro, "#/hearth/" + l.id, steps);
+  });
+  if (typeof CHAKRAS !== "undefined") CHAKRAS.forEach(c => add("\uD83C\uDF08", "Chakra", c.name, (c.sanskrit || "") + " \u2014 " + (c.location || ""), "#/chakra/" + c.id, (c.element || "") + " " + (c.mantra || "")));
+  if (typeof LUMINARIES !== "undefined") LUMINARIES.forEach(l => add("\uD83E\uDE90", "Luminary", l.planet + " \u2014 " + l.day, l.metal + ", " + l.chakra, "#/luminaries", (l.daywhy || "") + " " + (l.polarity || "")));
+  if (typeof MUDRA_LIB !== "undefined") MUDRA_LIB.forEach(m => add(m.icon || "\uD83E\uDD32", "Mudra", m.title, m.intro, "#/mudra/" + m.id, ""));
+  if (typeof PRESSURE_POINTS !== "undefined") PRESSURE_POINTS.forEach(pt => add("\uD83D\uDCCD", "Pressure Point", pt.name, pt.code + " \u2014 " + pt.loc, "#/points", (pt.for || "") + " " + (pt.how || "")));
+  if (typeof DISORDERS !== "undefined") DISORDERS.forEach(d => add(d.icon || "\uD83C\uDFF7\uFE0F", "Label", d.name, (d.clinical || "").slice(0, 120), "#/label/" + d.id, (d.spiritual || "").slice(0, 200)));
+  if (typeof SCRIPTURE !== "undefined") SCRIPTURE.forEach(b => {
+    add("\uD83D\uDCD6", "Scripture", b.name, b.intro, "#/scripture/" + b.id, "");
+    (b.chapters || []).forEach(c => (c.verses || []).forEach(v => {
+      add("\uD83D\uDCC4", "Verse", b.name + " " + c.n + ":" + v.n, v.t.slice(0, 120), "#/scripture/" + b.id + "/" + c.n, v.note || "");
+    }));
+  });
+  SEARCH_INDEX = idx;
+  return idx;
+}
+function vSearch(q) {
+  q = (q || "").trim().toLowerCase();
+  const idx = buildSearchIndex();
+  let results = "";
+  if (q.length >= 2) {
+    const words = q.split(/\s+/);
+    const hits = idx.filter(e => words.every(w => e.hay.includes(w))).slice(0, 60);
+    results = hits.length
+      ? `<p class="sub">${hits.length} result${hits.length > 1 ? "s" : ""}</p>` + hits.map(e =>
+        `<a class="tile" href="${e.href}"><div class="icon">${e.icon}</div><h3>${e.title}</h3><p><b style="color:var(--gold)">${e.type}</b> \u2014 ${e.desc.slice(0, 110)}\u2026</p></a>`).join("")
+      : `<div class="card"><p>Nothing found for "<b>${q}</b>". Try fewer words \u2014 "pineal", "sebi", "moon", "psalm".</p></div>`;
+  } else {
+    results = `<div class="card"><p class="sub">Type 2+ letters to search every lesson, section, chakra, luminary, mudra, pressure point, label, and scripture verse in the book.</p></div>`;
+  }
+  return `<h2>\uD83D\uDD0D Search the Book</h2>
+  <div class="card"><input id="q" type="search" placeholder="pineal, sebi, moon, thomas\u2026" oninput="location.hash='#/search/'+encodeURIComponent(this.value)" style="width:100%;padding:12px;border-radius:10px;border:1px solid var(--gold);background:#1a1030;color:#fff;font-size:16px"></div>
+  <div class="section-grid">${results}</div>`;
+}
+
 /* ---------- router ---------- */
 const routes = [
   [/^#\/?$/, vHome],
@@ -408,6 +452,8 @@ const routes = [
   [/^#\/manifest$/, vManifest],
   [/^#\/bible$/, vBible],
   [/^#\/scripture$/, vScripture],
+  [/^#\/search\/?$/, () => vSearch("")],
+  [/^#\/search\/(.+)$/, (m) => vSearch(decodeURIComponent(m[1]))],
   [/^#\/scripture\/([\w-]+)$/, (m) => vScriptureBook(m[1])],
   [/^#\/scripture\/([\w-]+)\/(\d+)$/, (m) => vScriptureChapter(m[1], m[2])],
   [/^#\/sos$/, vSos],

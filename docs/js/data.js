@@ -185,6 +185,21 @@ const PRESSURE_POINTS = [
   { name: "Zusanli (Leg Three Miles)", code: "ST36", loc: "Below the knee, outer shin", color: "#ffcf4d",
     how: "Press firmly for 1–2 minutes each leg.",
     for: "Builds core vitality and stamina for long practice sessions." },
+  { name: "Shenmen (Spirit Gate)", code: "HT7", loc: "Inner wrist crease, pinky side", color: "#3ddc84",
+    how: "Press gently with a fingertip for 1–2 minutes, breathing slowly.",
+    for: "Calms a racing spirit — anxiety, restlessness, racing thoughts, trouble sleeping. The name says it all: the gate the spirit walks through to rest." },
+  { name: "Fengchi (Wind Pool)", code: "GB20", loc: "Base of the skull, hollows beside the neck", color: "#7fd4ff",
+    how: "Press both sides with your thumbs for 1–2 minutes, tilting the head slightly back.",
+    for: "Headaches from energy work, mental fog, dizziness, stiff neck. Clears the 'wind' — the tradition's word for the scattered, buzzy static that gathers in the head." },
+  { name: "Laogong (Palace of Toil)", code: "PC8", loc: "Center of the palm", color: "#ff9f43",
+    how: "Press the center of one palm with the opposite thumb for 1 minute each hand — or simply hold your palms facing each other and feel the warmth build.",
+    for: "The emission point: qigong practitioners project energy from here. Use it to FEEL your own field — rub the palms, hold them apart, and notice the pressure between them. Your first direct proof of the energy this app talks about." },
+  { name: "Taiyang (Great Yang)", code: "EX-HN5", loc: "The temples", color: "#ffcf4d",
+    how: "Press in slow circles with the fingertips for 1–2 minutes.",
+    for: "Headaches, eye strain, the pressure-band feeling across the forehead after intense third-eye work. Releases what the temples have been holding." },
+  { name: "Sanyinjiao (Three Yin Crossing)", code: "SP6", loc: "Inner leg, four finger-widths above the ankle bone", color: "#e63946",
+    how: "Press firmly for 1–2 minutes each leg. Avoid in pregnancy.",
+    for: "Deep nourishment and grounding — where three yin channels cross. Settles the lower body, eases tension held in the hips and pelvis, steadies scattered energy. A root-point for when you feel unanchored." },
 ];
 
 const ASTRAL_TECHS = [

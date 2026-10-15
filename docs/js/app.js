@@ -296,7 +296,7 @@ function vManifest() {
 }
 
 function vBible() {
-  const ids = ["bible-decoded", "bible-metaphors", "bible-inner-chamber", "bible-prophets-one", "bible-ot", "bible-nt", "bible-apocrypha", "bible-enoch", "removed-books", "removed-books-2"];
+  const ids = ["bible-decoded", "bible-metaphors", "bible-inner-chamber", "bible-prophets-one", "bible-ot", "bible-nt", "bible-apocrypha", "bible-enoch", "removed-books", "removed-books-2", "bible-144000"];
   const ls = ids.map(id => HEARTH_LESSONS.find(l => l.id === id)).filter(Boolean);
   return `<h2>\uD83D\uDCDA The Bible Section</h2>
   <p class="sub">The Bible as a metaphor manual for inner work: how to decode it, the inner chamber, the one teaching behind Jesus, Muhammad and Buddha — plus the Old Testament, New Testament and lost books, decoded.</p>` +
@@ -416,7 +416,8 @@ function scriptureNotes() {
     "jonah": "jonah", "luke10": "luke", "john15": "john", "corinthians13": "corinthians1", "romans8": "romans",
     "matthew5": "matthew", "matthew7": "matthew", "isaiah6": "isaiah", "daniel7": "daniel",
     "genesis4": "genesis", "psalm46": "psalms", "isaiah40": "isaiah", "matthew25": "matthew",
-    "john10": "john", "acts2": "acts", "hebrews11": "hebrews", "revelation3": "revelation" };
+    "john10": "john", "acts2": "acts", "hebrews11": "hebrews", "revelation3": "revelation",
+    "revelation7": "revelation", "revelation14": "revelation" };
   if (typeof SCRIPTURE !== "undefined") SCRIPTURE.forEach(b => {
     const target = map[b.id];
     if (!target) return;

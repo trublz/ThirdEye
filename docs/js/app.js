@@ -141,13 +141,14 @@ function vChakra(id) {
 }
 
 function vLuminaries() {
-  return `<h2>🪐 The 7 Luminaries</h2><p class="sub">The 7 visible wanderers of the ancient sky. Each one rules a day of your week, a metal, a chakra, and a part of your body — this is the clock you were built for. Real photos: amateur telescopes & Earth-based shots \u2014 no space-agency imagery.</p>` +
+  return `<h2>🪐 The 7 Luminaries</h2><p class="sub">The 7 visible wanderers of the ancient sky. The 7-day week is named after them — Sunday is literally the Sun's day, Monday the Moon's, and so on — and each day carries its luminary's frequency. Each one rules a day of your week, a metal, a chakra, and a part of your body — this is the clock you were built for. Real photos: amateur telescopes & Earth-based shots \u2014 no space-agency imagery.</p>` +
     LUMINARIES.map(l => `<div class="card" style="border-left:4px solid ${l.color}">
       <h3>${l.planet} — ${l.day}</h3>
       ${typeof PHOTOS !== "undefined" && PHOTOS[l.photo] ? `<img src="${PHOTOS[l.photo]}" alt="${l.planet}" style="width:100%;max-width:280px;border-radius:50%;display:block;margin:10px auto;aspect-ratio:1;object-fit:cover">` : ""}
       ${typeof PHOTO_CREDITS !== "undefined" && PHOTO_CREDITS[l.photo] ? `<p class="sub" style="text-align:center;font-size:11px;opacity:.75">📷 ${PHOTO_CREDITS[l.photo]}</p>` : ""}
       <p class="sub"><b style="color:var(--gold)">What it IS:</b> ${l.astro}</p>
       <p class="sub"><b style="color:var(--gold)">The myth:</b> ${l.myth}</p>
+      <p class="sub"><b style="color:var(--gold)">Why this day:</b> ${l.daywhy}</p>
       <p class="sub"><b style="color:var(--gold)">What it rules in you:</b> ${l.rules}</p>
       <p class="sub"><b style="color:var(--gold)">How it connects to your body:</b> ${l.body}</p>
       <p class="sub"><b style="color:var(--gold)">How to work with it:</b> ${l.practice}</p>

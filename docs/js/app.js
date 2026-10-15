@@ -74,6 +74,8 @@ const TILES = [
   { h: "#/tesla", icon: "\u26A1", t: "Tesla", d: "The man, his research, 3-6-9 & the lost machines" },
   { h: "#/shilajit", icon: "🧱", t: "Shilajit", d: "The rock you eat: minerals, power & safe use" },
   { h: "#/manifest", icon: "🧲", t: "Manifestation", d: "How it works, the pineal link & the daily protocol" },
+  { h: "#/kundalini", icon: "🐍", t: "Kundalini", d: "The coiled serpent: map, signs, dangers & methods" },
+  { h: "#/oldworld", icon: "🏛️", t: "Old World", d: "Tartaria, mud flood, star forts & aether — decoded" },
   { h: "#/bible", icon: "\uD83D\uDCDA", t: "The Bible", d: "The metaphor manual: decode it, enter the inner chamber" },
   { h: "#/scripture", icon: "\uD83D\uDCD6", t: "Scripture", d: "Bible + Apocrypha in order, KJV text with decoded notes" },
   { h: "#/sos", icon: "🆘", t: "Grounding SOS", d: "When it's too much — use this NOW" },
@@ -263,6 +265,20 @@ function vTesla() {
     ls.map(l => `<a class="tile" href="#/hearth/${l.id}"><div class="icon">${l.icon}</div><h3>${l.title}</h3><p>${l.intro.slice(0, 95)}\u2026</p></a>`).join("");
 }
 
+function vKundalini() {
+  const ids = ["kundalini", "kundalini-origins", "kundalini-map", "kundalini-signs", "kundalini-syndrome", "kundalini-activate", "kundalini-christos"];
+  const ls = ids.map(id => HEARTH_LESSONS.find(l => l.id === id)).filter(Boolean);
+  return `<h2>\uD83D\uDC0D The Kundalini Section</h2>
+  <p class="sub">The coiled serpent power — the 2,800-year-old map of the inner fire. Origins, the body map, signs, the dangers, the methods, and the one current in many languages. Read the \u26A0\uFE0F lesson before any intense practice.</p>` +
+    ls.map(l => `<a class="tile" href="#/hearth/${l.id}"><div class="icon">${l.icon}</div><h3>${l.title}</h3><p>${l.intro.slice(0, 95)}\u2026</p></a>`).join("");
+}
+function vOldWorld() {
+  const ids = ["tartaria", "tartaria-name", "mudflood", "star-forts", "cathedral-sound", "glass-light", "aether-old-world", "reset-fairs", "old-world-ties"];
+  const ls = ids.map(id => HEARTH_LESSONS.find(l => l.id === id)).filter(Boolean);
+  return `<h2>\uD83C\uDFDB\uFE0F The Old World Section</h2>
+  <p class="sub">Tartaria, the mud flood, star forts, cathedrals as frequency machines, aether energy — torn apart with honest labels. Documented stays documented.</p>` +
+    ls.map(l => `<a class="tile" href="#/hearth/${l.id}"><div class="icon">${l.icon}</div><h3>${l.title}</h3><p>${l.intro.slice(0, 95)}\u2026</p></a>`).join("");
+}
 function vDiet() {
   const ids = ["drsebi", "sebi-foods", "sebi-food-guide", "sebi-herbs", "sebi-sourcing", "diet-proper", "diet", "dead-flesh", "energy-pyramid", "water", "deephealth"];
   const ls = ids.map(id => HEARTH_LESSONS.find(l => l.id === id)).filter(Boolean);
@@ -398,7 +414,9 @@ function scriptureNotes() {
     "ezekiel1": "ezekiel", "psalm23": "psalms", "john3": "john", "matthew13": "matthew", "corinthians15": "corinthians1",
     "genesis2": "genesis", "exodus3": "exodus", "exodus20": "exodus", "psalm91": "psalms", "ezekiel37": "ezekiel",
     "jonah": "jonah", "luke10": "luke", "john15": "john", "corinthians13": "corinthians1", "romans8": "romans",
-    "matthew5": "matthew", "matthew7": "matthew", "isaiah6": "isaiah", "daniel7": "daniel" };
+    "matthew5": "matthew", "matthew7": "matthew", "isaiah6": "isaiah", "daniel7": "daniel",
+    "genesis4": "genesis", "psalm46": "psalms", "isaiah40": "isaiah", "matthew25": "matthew",
+    "john10": "john", "acts2": "acts", "hebrews11": "hebrews", "revelation3": "revelation" };
   if (typeof SCRIPTURE !== "undefined") SCRIPTURE.forEach(b => {
     const target = map[b.id];
     if (!target) return;
@@ -485,6 +503,8 @@ const routes = [
   [/^#\/tesla$/, vTesla],
   [/^#\/shilajit$/, vShilajit],
   [/^#\/manifest$/, vManifest],
+  [/^#\/kundalini$/, vKundalini],
+  [/^#\/oldworld$/, vOldWorld],
   [/^#\/bible$/, vBible],
   [/^#\/scripture$/, vScripture],
   [/^#\/search\/?$/, () => vSearch("")],

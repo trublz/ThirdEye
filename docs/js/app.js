@@ -83,6 +83,7 @@ const TILES = [
 
 function vHome() {
   return `<h1>👁️ ThirdEye</h1>
+  <div class="card"><input type="search" placeholder="\uD83D\uDD0D Search the entire book…" onkeydown="if(event.key==='Enter'){location.hash='#/search/'+encodeURIComponent(this.value)}" style="width:100%;padding:12px;border-radius:10px;border:1px solid var(--gold);background:#1a1030;color:#fff;font-size:16px"></div>
   <p class="sub">Your field guide to awakening — from first questions to full embodiment. Purple skies, gold truth.</p>
   <div class="section-grid">${TILES.map(t =>
     `<a class="tile" href="${t.h}"><div class="icon">${t.icon}</div><h3>${t.t}</h3><p>${t.d}</p></a>`).join("")}</div>

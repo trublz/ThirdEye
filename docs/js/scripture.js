@@ -425,3 +425,94 @@ chapters: [
 },
 ];
 for (const b of SCRIPTURE_B4) SCRIPTURE.push(b);
+/* Scripture reader batch 5: more decoded passages. KJV public domain. */
+const SCRIPTURE_B5 = [
+{
+id: "genesis4", name: "Genesis 4 — Cain and Abel", testament: "OT", order: 69,
+intro: "The first murder as the inner war: the tiller of ground vs. the keeper of sheep.",
+chapters: [
+{ n: 4, verses: [
+{ n: 7, t: "If thou doest well, shalt thou not be accepted? and if thou doest not well, sin lieth at the door. And unto thee shall be his desire, and thou shalt rule over him.", note: "'Sin lieth at the door' — sin as a crouching animal at the threshold: desire waiting at the gate of action. 'Thou shalt RULE OVER him' — the teaching's first statement of self-mastery: you are not the animal's prey; you are its master. The whole discipline of the inner life in one verse, spoken to the first murderer before the murder." },
+],
+},
+],
+},
+{
+id: "psalm46", name: "Psalm 46 — Be Still", testament: "OT", order: 70,
+intro: "The stillness psalm: God as refuge, and the single command that unlocks it.",
+chapters: [
+{ n: 46, verses: [
+{ n: 1, t: "God is our refuge and strength, a very present help in trouble.", note: "'A VERY PRESENT help' — not a distant help, not a future help: present. The refuge isn't elsewhere; it's here, now, in the trouble itself. The teaching's reading: the present moment, entered fully, IS the refuge." },
+{ n: 10, t: "Be still, and know that I am God: I will be exalted among the heathen, I will be exalted in the earth.", note: "'BE STILL, and know' — stillness as the method of knowing: not study, not strive, be STILL. The verse the entire contemplative tradition stands on. Four words of instruction, and most practitioners spend years learning to obey them for sixty seconds." },
+],
+},
+],
+},
+{
+id: "isaiah40", name: "Isaiah 40 — Eagle's Wings", testament: "OT", order: 71,
+intro: "Comfort for the exhausted: the everlasting God and the renewal of strength.",
+chapters: [
+{ n: 40, verses: [
+{ n: 29, t: "He giveth power to the faint; and to them that have no might he increaseth strength.", note: "'To them that have NO MIGHT he increaseth strength' — the power goes to the faint, not the strong: the teaching's upside-down economy. Emptiness is the qualification. The ones who admit they have nothing are the ones who receive." },
+{ n: 31, t: "But they that wait upon the LORD shall renew their strength; they shall mount up with wings as eagles; they shall run, and not be weary; and they shall walk, and not faint.", note: "'They that WAIT upon the LORD' — waiting as the active verb: the Hebrew implies binding, twisting together, like cords braided. Renewal comes to the braided — the one twisted together with the source. Then: wings, running, walking — the ascending order is backwards (fly, run, walk) because the hardest thing isn't flying, it's the daily walk without fainting." },
+],
+},
+],
+},
+{
+id: "matthew25", name: "Matthew 25 — The Talents", testament: "NT", order: 72,
+intro: "The parable of the talents: what you do with what you were given.",
+chapters: [
+{ n: 25, verses: [
+{ n: 15, t: "And unto one he gave five talents, to another two, and to another one; to every man according to his several ability; and straightway took his journey.", note: "'To every man according to his several ABILITY' — the distribution is unequal ON PURPOSE, matched to capacity. The teaching's reading: your gifts, your starting conditions, your measure — all calibrated. Comparison is therefore nonsense; the only question is what YOU do with YOUR measure." },
+{ n: 29, t: "For unto every one that hath shall be given, and he shall have abundance: but from him that hath not shall be taken away even that which he hath.", note: "The harshest verse in the parables — and the most mechanical: USED capacity grows, BURIED capacity atrophies. 'Hath' means 'uses.' Use the gift and it multiplies; bury it and even the buried thing rots. The universe compounds the active and repossesses the dormant. This is true of muscles, minds, and money alike." },
+],
+},
+],
+},
+{
+id: "john10", name: "John 10 — The Good Shepherd", testament: "NT", order: 73,
+intro: "The shepherd discourse: the voice the sheep know, and the thief who climbs another way.",
+chapters: [
+{ n: 10, verses: [
+{ n: 4, t: "And when he putteth forth his own sheep, he goeth before them, and the sheep follow him: for they know his voice.", note: "'They KNOW HIS VOICE' — recognition, not obedience: the sheep follow because the voice is KNOWN. The teaching's test of every guide, teacher, and inner prompting: do you KNOW the voice? The familiar resonance of truth vs. the stranger's pitch. Discernment is recognition." },
+{ n: 10, t: "The thief cometh not, but for to steal, and to kill, and to destroy: I am come that they might have life, and that they might have it more abundantly.", note: "The thief's three verbs — STEAL, KILL, DESTROY — vs. the shepherd's one gift: life, MORE ABUNDANTLY. The teaching's diagnostic for every influence in your life: does it steal/kill/destroy, or does it make life more abundant? Run every teacher, habit, and voice through this verse." },
+],
+},
+],
+},
+{
+id: "acts2", name: "Acts 2 — Pentecost", testament: "NT", order: 74,
+intro: "Tongues of fire: the descent of the Spirit as the fire current arriving.",
+chapters: [
+{ n: 2, verses: [
+{ n: 3, t: "And there appeared unto them cloven tongues like as of fire, and it sat upon each of them.", note: "'Tongues LIKE AS of fire' — like as: the text hedges, describing the indescribable. Fire that SITS on each one — the fire current arriving personally, individually. Read it beside the kundalini map: the fire descending the crown, each person a lamp lit." },
+{ n: 4, t: "And they were all filled with the Holy Ghost, and began to speak with other tongues, as the Spirit gave them utterance.", note: "'FILLED with the Holy Ghost' — filled: the vessel language again. And the first effect is SPEECH — new tongues: the purified mouth (Isaiah 6's coal) now speaking what the old mouth couldn't. The fire rewires the word." },
+],
+},
+],
+},
+{
+id: "hebrews11", name: "Hebrews 11 — Faith", testament: "NT", order: 75,
+intro: "The faith chapter: the definition, and the cloud of witnesses.",
+chapters: [
+{ n: 11, verses: [
+{ n: 1, t: "Now faith is the substance of things hoped for, the evidence of things not seen.", note: "FAITH IS THE SUBSTANCE — not the wish for the substance: faith itself is called SUBSTANCE (hypostasis — the underlying reality). And 'the EVIDENCE of things not seen' — faith as a kind of perception, evidence-grade. The teaching's reading: faith isn't belief without proof; it's the organ that perceives what the eyes can't yet." },
+{ n: 3, t: "Through faith we understand that the worlds were framed by the word of God, so that things which are seen were not made of things which do appear.", note: "'Things which are seen were NOT made of things which do appear' — the visible made from the invisible: the teaching's cosmology in one clause. The word (vibration, intention) frames worlds. Matter is frozen music; faith is hearing the music before it freezes." },
+],
+},
+],
+},
+{
+id: "revelation3", name: "Revelation 3 — Lukewarm", testament: "NT", order: 76,
+intro: "The letter to Laodicea: the most surgical diagnosis of spiritual mediocrity ever written.",
+chapters: [
+{ n: 3, verses: [
+{ n: 16, t: "So then because thou art lukewarm, and neither cold nor hot, I will spue thee out of my mouth.", note: "'LUKEWARM' — the most dangerous temperature: cold can be warmed, hot is alive, but lukewarm is the comfortable dead. The teaching's warning to every practitioner: the enemy isn't doubt or failure — it's the mild, manageable, half-awake middle. 'I will spue thee out' — the system REJECTS the lukewarm the way the body rejects poison." },
+{ n: 17, t: "Because thou sayest, I am rich, and increased with goods, and have need of nothing; and knowest not that thou art wretched, and miserable, and poor, and blind, and naked:", note: "'Have need of NOTHING' — the lukewarm church's creed: self-sufficiency as spiritual death. And the fivefold diagnosis it can't see: wretched, miserable, poor, blind, naked. The teaching's mirror: the moment you think you've arrived, you've left. Need is the door; 'need nothing' is the wall." },
+],
+},
+],
+},
+];
+for (const b of SCRIPTURE_B5) SCRIPTURE.push(b);

@@ -64,7 +64,7 @@ const TILES = [
   { h: "#/chakras", icon: "🌈", t: "Chakras", d: "All 7 energy centers explained" },
   { h: "#/luminaries", icon: "🪐", t: "7 Luminaries", d: "Planets, metals, days & your body" },
   { h: "#/fingers", icon: "🤲", t: "Mudra Library", d: "10 hand positions \u2014 every finger\u2019s chakra, with photos" },
-  { h: "#/points", icon: "📍", t: "Pressure Points", d: "7 key acupressure points" },
+  { h: "#/points", icon: "📍", t: "Pressure Points", d: "12 key acupressure points" },
   { h: "#/astral", icon: "🌌", t: "Astral Projection", d: "4 techniques, step by step" },
   { h: "#/pineal", icon: "👁️", t: "Pineal Protocol", d: "Decalcify & activate the third eye" },
   { h: "#/hearth", icon: "🔥", t: "The Hearth", d: "Celestial University teachings, decoded — free" },
@@ -181,7 +181,7 @@ function vMudra(id) {
 }
 
 function vPoints() {
-  return `<h2>📍 Pressure Points</h2><p class="sub">7 key acupressure points. Firm pressure, slow breathing, 1–2 minutes each.</p>` +
+  return `<h2>📍 Pressure Points</h2><p class="sub">12 key acupressure points. Firm pressure, slow breathing, 1–2 minutes each.</p>` +
     PRESSURE_POINTS.map(p => `<div class="card" style="border-left:4px solid ${p.color}">
       <h3>${p.name}</h3><p class="sub">${p.code} · ${p.loc}</p>
       <p class="sub"><b>How:</b> ${p.how}</p><p class="sub"><b>For:</b> ${p.for}</p></div>`).join("");

@@ -210,7 +210,7 @@ function vPointLesson(id) {
 }
 
 function vAstral() {
-  return `<h2>🌌 Astral Projection</h2><p class="sub">Consciousness leaving the body — the most direct proof you're more than flesh. 4 techniques, easiest first. Never practice exhausted or afraid; ground after.</p>` +
+  return `<h2>🌌 Astral Projection</h2><p class="sub">Consciousness leaving the body — the most direct proof you're more than flesh. 10 techniques, easiest first — now with the vibrational stage, the paralysis gateway, the silver cord, and the full protection protocol. Never practice exhausted or afraid; ground after.</p>` +
     ASTRAL_TECHS.map(a => `<div class="card"><h3>${a.name}</h3>
       <p class="sub">By ${a.by} · <b style="color:var(--gold)">${a.level}</b></p>
       <ol class="steps">${a.steps.map(s => `<li>${s}</li>`).join("")}</ol></div>`).join("") +

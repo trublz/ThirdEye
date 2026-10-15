@@ -395,7 +395,10 @@ function scriptureNotes() {
   const notes = {}; // bookId -> ch -> verse -> note
   const map = { "genesis": "genesis", "genesis-fall": "genesis", "john1": "john", "matthew6": "matthew",
     "galatians4": "galatians", "revelation21": "revelation", "zechariah4": "zechariah", "romans7": "romans",
-    "ezekiel1": "ezekiel", "psalm23": "psalms", "john3": "john", "matthew13": "matthew", "corinthians15": "corinthians1" };
+    "ezekiel1": "ezekiel", "psalm23": "psalms", "john3": "john", "matthew13": "matthew", "corinthians15": "corinthians1",
+    "genesis2": "genesis", "exodus3": "exodus", "exodus20": "exodus", "psalm91": "psalms", "ezekiel37": "ezekiel",
+    "jonah": "jonah", "luke10": "luke", "john15": "john", "corinthians13": "corinthians1", "romans8": "romans",
+    "matthew5": "matthew", "matthew7": "matthew", "isaiah6": "isaiah", "daniel7": "daniel" };
   if (typeof SCRIPTURE !== "undefined") SCRIPTURE.forEach(b => {
     const target = map[b.id];
     if (!target) return;

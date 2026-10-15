@@ -361,28 +361,59 @@ function checkIn() {
 
 /* ---------- scripture reader ---------- */
 function vScripture() {
-  const books = [...SCRIPTURE].sort((a, b) => a.order - b.order);
+  const books = scriptureBooks();
   return `<h2>\uD83D\uDCDA Scripture Reader</h2>
   <p class="sub">The Bible and the Apocrypha in canonical order, King James text (public domain) — with the metaphor decoded verse by verse. Tap \uD83D\uDD0D on any verse to see what it means.</p>` +
-    books.map(b => `<a class="tile" href="#/scripture/${b.id}"><div class="icon">\uD83D\uDCD6</div><h3>${b.name}</h3><p>${b.intro.slice(0, 95)}\u2026</p></a>`).join("");
+    books.map(b => `<a class="tile" href="#/scripture/${b.id}"><div class="icon">\uD83D\uDCD6</div><h3>${b.name}</h3><p>${(b.intro || (b.testament === "APOCRYPHA" ? "Deuterocanonical book" : "King James text")).slice(0, 95)}\u2026</p></a>`).join("");
 }
 function vScriptureBook(id) {
-  const b = SCRIPTURE.find(x => x.id === id);
+  const b = scriptureBooks().find(x => x.id === id);
   if (!b) return `<h2>Not found</h2>`;
-  return `<h2>\uD83D\uDCD6 ${b.name}</h2><p class="sub">${b.intro}</p>` +
+  return `<h2>\uD83D\uDCD6 ${b.name}</h2><p class="sub">${b.intro || "King James Version (public domain)" + (b.testament === "APOCRYPHA" ? " — deuterocanonical, in its traditional place" : "")}</p>` +
     b.chapters.map(c => `<a class="tile" href="#/scripture/${b.id}/${c.n}"><div class="icon">\uD83D\uDCC4</div><h3>Chapter ${c.n}</h3><p>${c.verses.length} verses with notes</p></a>`).join("");
 }
 function vScriptureChapter(bookId, chN) {
-  const b = SCRIPTURE.find(x => x.id === bookId);
+  const b = scriptureBooks().find(x => x.id === bookId);
   const c = b && b.chapters.find(x => x.n === Number(chN));
   if (!c) return `<h2>Not found</h2>`;
-  const verses = c.verses.map(v => `
+  const notes = scriptureNotes();
+  const verses = c.verses.map(v => {
+    const note = (notes[bookId] && notes[bookId][c.n] && notes[bookId][c.n][v.n]) || v.note;
+    return `
     <div class="card" style="margin-bottom:8px">
       <p><b style="color:var(--gold)">${v.n}</b> ${v.t}</p>
-      ${v.note ? `<a href="javascript:void(0)" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'" style="color:var(--gold);font-size:14px">\uD83D\uDD0D what this means</a><div style="display:none;margin-top:8px;padding:10px;border-left:3px solid var(--gold);background:rgba(255,215,0,.06);border-radius:8px"><p class="sub" style="margin:0">${v.note}</p><p style="margin:8px 0 0"><a href="#/hearth/bible-metaphors" style="color:var(--gold);font-size:13px">Learn the decoding method \u2192</a></p></div>` : ""}
-    </div>`).join("");
+      ${note ? `<a href="javascript:void(0)" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'" style="color:var(--gold);font-size:14px">\uD83D\uDD0D what this means</a><div style="display:none;margin-top:8px;padding:10px;border-left:3px solid var(--gold);background:rgba(255,215,0,.06);border-radius:8px"><p class="sub" style="margin:0">${note}</p><p style="margin:8px 0 0"><a href="#/hearth/bible-metaphors" style="color:var(--gold);font-size:13px">Learn the decoding method \u2192</a></p></div>` : ""}
+    </div>`; }).join("");
   return `<h2>${b.name} ${c.n} <span class="sub">KJV</span></h2>
   <p class="sub"><a href="#/scripture/${b.id}" style="color:var(--gold)">\u2190 ${b.name}</a> · <a href="#/scripture" style="color:var(--gold)">All books</a></p>${verses}`;
+}
+
+/* ---------- scripture: full canon + annotations ---------- */
+let SCRIPTURE_NOTES = null;
+function scriptureNotes() {
+  if (SCRIPTURE_NOTES) return SCRIPTURE_NOTES;
+  const notes = {}; // bookId -> ch -> verse -> note
+  const map = { "genesis": "genesis", "genesis-fall": "genesis", "john1": "john", "matthew6": "matthew",
+    "galatians4": "galatians", "revelation21": "revelation", "zechariah4": "zechariah", "romans7": "romans",
+    "ezekiel1": "ezekiel", "psalm23": "psalms", "john3": "john", "matthew13": "matthew", "corinthians15": "corinthians1" };
+  if (typeof SCRIPTURE !== "undefined") SCRIPTURE.forEach(b => {
+    const target = map[b.id];
+    if (!target) return;
+    (b.chapters || []).forEach(c => (c.verses || []).forEach(v => {
+      if (!v.note) return;
+      notes[target] = notes[target] || {};
+      notes[target][c.n] = notes[target][c.n] || {};
+      notes[target][c.n][v.n] = v.note;
+    }));
+  });
+  SCRIPTURE_NOTES = notes;
+  return notes;
+}
+function scriptureBooks() {
+  // full canon first, then annotated extras (Thomas etc.) not in the canon
+  const full = (typeof SCRIPTURE_FULL !== "undefined") ? SCRIPTURE_FULL : [];
+  const extra = (typeof SCRIPTURE !== "undefined") ? SCRIPTURE.filter(b => ["thomas", "genesis-fall"].indexOf(b.id) === -1 ? false : true) : [];
+  return full.concat(extra);
 }
 
 /* ---------- search ---------- */

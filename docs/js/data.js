@@ -375,21 +375,129 @@ const PRESSURE_LESSONS = [
 const ASTRAL_TECHS = [
   {
     name: "The Rope Technique", by: "Robert Bruce", level: "Beginner-friendly",
-    steps: ["Lie down, relax your body completely while keeping your mind awake.", "Visualize a rope hanging above you.", "Without moving a muscle, imagine your astral hands reaching up and pulling yourself hand-over-hand up the rope.", "The climbing action triggers the projection reflex — vibrations or floating mean it's working.", "Don't force it. If nothing happens in 20 minutes, rest and try another day."],
+    steps: [
+      "WHAT IT IS: the most widely taught exit method in the modern literature \u2014 you climb an imaginary rope to pull your awareness out of the body. WHY it works: the imagined climbing gives your mind a single, absorbing physical-like action; that focused intent triggers the separation reflex while the body stays asleep.",
+      "Set the stage: lie on your back, in the morning or after light rest \u2014 not when exhausted. Loosen clothing, room quiet and dim. The goal is 'mind awake, body asleep,' and everything that follows serves that one state.",
+      "Relax the body in layers: feet, legs, hips, torso, hands, arms, shoulders, face. Take 5–10 minutes. Don't rush this \u2014 a half-relaxed body is the #1 reason attempts fizzle. The body must be genuinely close to sleep while you stay lucid.",
+      "Reach the hypnagogic edge: let your thoughts drift but keep a thread of awareness \u2014 watch the images behind your eyelids without grabbing them. You're waiting for the body to cross into sleep while you stay behind, watching.",
+      "Introduce the rope: visualize a thick, textured rope hanging from the ceiling directly above your chest. See its fibers. Now \u2014 WITHOUT moving a single physical muscle \u2014 reach up with your 'other' hands and grip it.",
+      "Climb hand over hand: pull, reach, pull, reach. Feel the effort in your shoulders and arms \u2014 the imagined exertion is the point. Keep climbing steadily for several minutes. Don't check whether it's 'working'; checking is thinking, and thinking re-anchors you.",
+      "Read the signals: tingling, buzzing, vibration, a sense of lightness or floating, a rushing sound \u2014 these mean the separation reflex is firing. Do NOT get excited (excitement snaps you back instantly). Stay bored, stay climbing.",
+      "If separation happens, move away from the body immediately: roll, float, or walk away several feet before looking around \u2014 lingering near the body tends to snap you back. If nothing happens in ~20 minutes, rest. This is a skill built over weeks, not a trick."
+    ],
   },
   {
     name: "Wake-Back-to-Bed (WBTB)", by: "Modern practice", level: "High success rate",
-    steps: ["Sleep 4.5–6 hours, then wake up.", "Stay awake 20–40 minutes — read about astral projection.", "Lie back down with the clear intention: 'I will separate from my body.'", "As you drift off, hold awareness. The hypnagogic state is the launch pad.", "Vibrations, buzzing, or sleep paralysis are doorways, not dangers — relax into them."],
+    steps: [
+      "WHAT IT IS: the highest-success-rate method in practitioner reports \u2014 you interrupt sleep, then re-enter it with awareness intact. WHY it works: waking after 4–6 hours puts you in REM-rich territory; the body falls back asleep fast while your primed mind stays lit \u2014 you slide straight into the launch state.",
+      "Set an alarm for 4.5–6 hours after you fall asleep. When it goes off, get up \u2014 don't just roll over and think about it. The interruption must be real.",
+      "Stay awake 20–40 minutes. Read about astral projection, review your journal, hold the clear intention: 'I am going to separate from my body.' You're programming the subconscious while the brain is in its most suggestible window.",
+      "Go back to bed and lie on your back. Relax quickly \u2014 your body already knows how to fall asleep from here. The trick is keeping the mind's pilot light on while the body powers down.",
+      "Hold awareness at the edge: as you drift, watch the hypnagogic imagery. The moment vibrations, buzzing, or the sense of paralysis arrives, you are at the doorway. These are not dangers \u2014 they are the door.",
+      "At the doorway, use an exit: rope-climb, roll sideways out, or simply intend upward floating. Pick ONE and commit \u2014 hesitation between methods kills the window.",
+      "If sleep paralysis comes with fear, remember the reframe: nothing in the literature reports harm from the experience itself \u2014 only panic during it ends it early. Relax into the buzzing; it is the sound of the door opening.",
+      "Journal immediately on waking \u2014 every fragment. Across all schools, journaling is taught as programming: it tells the subconscious these experiences matter, and recall improves dramatically within weeks."
+    ],
+  },
+  {
+    name: "The Roll-Out Method", by: "Practitioner consensus", level: "Beginner-friendly",
+    steps: [
+      "WHAT IT IS: at the vibrational peak, instead of floating up, you roll sideways out of your body like rolling over in bed. WHY it works: many practitioners find lateral separation easier than vertical lift \u2014 the intention to 'roll' bypasses the expectation of heaviness that blocks upward exits.",
+      "Reach the launch state first: deep relaxation to the hypnagogic edge, or the vibrational stage (buzzing/tingling). The roll-out is an EXIT technique \u2014 it needs the doorway open first. Use rope-technique relaxation or WBTB to get there.",
+      "When the vibrations peak, don't analyze them. Form one clear intention: 'I am rolling out of my body to the left.' Keep it simple and physical \u2014 this is a body-memory action, not a visualization exercise.",
+      "Execute the roll: intend the motion the way you'd roll over in bed \u2014 shoulder leading, body following. Don't try to move muscles; intend the MOVEMENT. The first attempts often feel like rocking or partial movement \u2014 that's progress, not failure.",
+      "If you feel stuck halfway \u2014 a classic partial separation \u2014 keep gently intending the roll without forcing. Rocking slightly can build momentum. Never strain; strain re-anchors attention in the physical body.",
+      "Once out, move away from the bed several feet before doing anything else. New projectors who linger near the body tend to snap back. Distance stabilizes the state.",
+      "Stay calm throughout: the two rules of every attempt are (1) never focus on the physical body's sensations mid-technique \u2014 attention on the body locks you in \u2014 and (2) purge fear beforehand. Excitement and fear are the two snap-back triggers.",
+      "Log the attempt: full exit, partial movement, or just vibrations \u2014 all of it goes in the journal. The subconscious learns from recorded attempts; unrecorded ones fade like uncaught dreams."
+    ],
   },
   {
     name: "Monroe's Method", by: "Robert Monroe", level: "Intermediate",
-    steps: ["Lie down in the early morning, deeply relaxed.", "Focus on the space between your eyebrows until vibrations begin.", "Mentally 'roll' out of your body — imagine rolling sideways.", "If stuck, try the 'lift' — imagine floating upward.", "Stay calm. Excitement snaps you back instantly."],
+    steps: [
+      "WHAT IT IS: the method of the Monroe Institute's founder \u2014 brow-focus to generate vibrations, then roll or lift out. WHY it works: sustained attention on the brow center (the Ajna region) concentrates awareness at the head, and the vibrational state it produces is the classic separation signal.",
+      "Lie down in the early morning, deeply relaxed \u2014 the method works best when the body is already sleep-adjacent. Full body relaxation first; no shortcuts.",
+      "Focus on the space between your eyebrows. Not straining \u2014 a soft, steady attention, as if looking at the dark behind your eyelids from that point. Hold it for 10–20 minutes.",
+      "When vibrations begin \u2014 buzzing, humming, electrical tingling \u2014 do not fight, analyze, or celebrate them. Surrender and let them expand. They are the signal, not the destination. (Many practitioners never feel vibrations; their absence is not failure.)",
+      "At peak vibration, mentally 'roll' out sideways \u2014 or if rolling doesn't catch, try the 'lift': intend yourself floating upward toward the ceiling. Commit to one exit per attempt.",
+      "If you feel resistance, don't force it. Ease off, let the vibrations build again, and try once more. Forcing re-anchors you; patience deepens the state.",
+      "Stay emotionally flat: calm curiosity is the correct altitude. The astral is described across schools as emotionally responsive \u2014 your inner state shapes what you meet \u2014 so enter clean.",
+      "Return is automatic: thinking of the body, or any sharp emotion, brings you back. Afterward, ground \u2014 water, food, feet on the earth \u2014 and journal everything."
+    ],
+  },
+  {
+    name: "The Vibrational Stage \u2014 Mastering It", by: "Essential skill", level: "Core technique",
+    steps: [
+      "WHAT IT IS: the buzzing, humming, electrical-tingling state that often precedes separation \u2014 the single most reported gateway in the literature. WHY it matters: most failed attempts die here, not from lack of technique but from mishandling the vibrations: fighting them, fearing them, or getting excited by them.",
+      "Recognize it: it can feel like electricity under the skin, a loud internal hum, rushing wind, or a full-body shiver. It often starts in the head or chest and spreads. It can be intense \u2014 and it is harmless.",
+      "Rule one: DO NOT FIGHT IT. Tensing against the vibrations is like tensing against a wave \u2014 it just batters you. The instruction across every school: surrender and let it expand. Relax INTO it, not away from it.",
+      "Rule two: DO NOT ANALYZE IT. The moment you start thinking 'what is this, is this it, am I doing it right' \u2014 you've re-engaged the analytical mind and the state collapses. Thinking is the anchor; stay in feeling.",
+      "Rule three: DO NOT GET EXCITED. Joy, triumph, amazement \u2014 all snap you back instantly. The correct emotion is boredom: mild, detached curiosity. 'Oh, vibrations. Fine.'",
+      "Amplify deliberately: once you're calm inside the vibrations, you can deepen them by intending them to spread and strengthen \u2014 like turning up a dial. Stronger, steadier vibrations = a wider doorway.",
+      "Exit from the peak: when the vibrations are strong and stable, use your chosen exit \u2014 rope, roll, or lift. The vibrations are the runway; the exit technique is the takeoff.",
+      "If vibrations never come, you haven't failed: a large share of practitioners separate without them, often via the lucid-dream on-ramp. Don't chase the signal; chase the state."
+    ],
+  },
+  {
+    name: "Sleep Paralysis as Gateway", by: "Practitioner consensus", level: "Intermediate",
+    steps: [
+      "WHAT IT IS: using the 'mind awake, body asleep' paralysis state \u2014 spontaneous or induced \u2014 as the launchpad for exit techniques. WHY it works: paralysis IS the separation state half-completed; the body is already offline, so you're starting at the doorway instead of walking to it.",
+      "Reframe it first: sleep paralysis has a terrifying reputation it doesn't deserve. The instruction across schools is unanimous \u2014 it is the launchpad, not a malfunction. Fear is the #1 block; understanding dissolves it.",
+      "When paralysis hits (spontaneously at sleep onset or waking): stay calm. Breathe slowly. Remind yourself: 'This is the doorway. I am safe.' Panic ends the state; calm preserves it.",
+      "Don't fight the immobility: struggling to move re-engages the body and collapses the window. Instead, redirect: the energy you'd spend fighting goes into an exit technique \u2014 rope-climb or roll-out \u2014 performed entirely in intention, not muscle.",
+      "If frightening imagery or presence arises: it is consistently described as hypnagogic content amplified by fear \u2014 the mind dreaming while awake. Keep breathing, hold a calm or protected feeling, and it passes. Setting a protective intention (light around you) BEFORE sleep reduces this dramatically.",
+      "Chain it: paralysis → calm → exit technique → separation. Practitioners who learn this chain convert their most feared sleep experience into their most reliable launch method.",
+      "Afterward, ground and journal. Note what preceded the paralysis (sleep position, timing, stress) \u2014 patterns emerge, and you'll learn to predict your windows."
+    ],
+  },
+  {
+    name: "The Lucid Dream On-Ramp", by: "Several schools", level: "Most reliable for beginners",
+    steps: [
+      "WHAT IT IS: learn lucid dreaming first, then convert lucidity into projection \u2014 once lucid in a dream, intend to 'wake up' out of the dream body into the astral. WHY it works: it's the gentlest path \u2014 you practice awareness inside sleep (where the body is already handled) before attempting the harder mind-awake separation. Several schools teach that most spontaneous OBEs already happen this way.",
+      "Build the foundation: reality checks, 5–10 times daily \u2014 look at your hands, ask 'am I dreaming?', try pushing a finger through your palm. In dreams, the habit fires and lucidity triggers.",
+      "Keep the dream journal: write every dream fragment on waking, before moving. This is the same programming principle as OBE journaling \u2014 recall improves dramatically within weeks, and you need recall to catch lucidity.",
+      "Stabilize lucidity: when you realize you're dreaming, don't get excited (same snap-back rule). Rub your dream hands together or spin slowly \u2014 the standard stabilizers \u2014 then state your intention.",
+      "The conversion: once stable and lucid, intend to 'wake up' \u2014 not into the physical bedroom, but OUT of the dream entirely. Common phrasings: 'I wake up out of this dream,' or intend yourself rising from the dream body. Many practitioners report the dream scene dissolving into the vibrational state, then full projection.",
+      "Alternative conversion: while lucid, find a door or mirror in the dream and intend it to lead 'out of the body.' The dream's own symbolism becomes the exit.",
+      "Why schools recommend this first: no sleep paralysis to face, no vibration stage to master \u2014 just dreaming plus awareness. The skills transfer directly: journaling, calm, intention, and the snap-back rules are identical."
+    ],
   },
   {
     name: "Affirmation Drift", by: "Classic", level: "Gentle / beginner",
-    steps: ["At bedtime, repeat: 'I am more than my physical body.'", "Visualize yourself floating above your bed.", "Let the image carry you as you fall asleep.", "Set the intention to remember — keep the journal by your bed.", "Results build over weeks. Patience is the technique."],
+    steps: [
+      "WHAT IT IS: the slowest, gentlest method \u2014 nightly affirmation and visualization that programs the subconscious over weeks. WHY it works: it bypasses technique entirely and works by suggestion; the subconscious, repeatedly told what to do at the sleep boundary, eventually does it.",
+      "At bedtime, repeat slowly: 'I am more than my physical body.' Not as a wish \u2014 as a statement. Feel the truth of it as you say it. Ten to twenty repetitions, getting quieter each time.",
+      "Visualize yourself floating above your bed: see the room from above, see your body below. Make it sensory \u2014 the cool air, the lightness. Let the image carry you as you fall asleep; don't force wakefulness.",
+      "Set the intention to remember: keep the journal and a pen by the bed before you start. The physical setup is part of the programming \u2014 it tells the subconscious you're serious.",
+      "Results build over weeks, not nights. Patience IS the technique here. Most practitioners report the first results as vivid dreams, then lucid dreams, then the sense of floating \u2014 the progression is the method working.",
+      "Combine it: affirmation drift pairs well with everything else \u2014 use it as the nightly background practice while working a primary technique like WBTB or rope. The subconscious priming amplifies all of them."
+    ],
   },
-];
+  {
+    name: "The Silver Cord & Returning", by: "Traditional teaching", level: "Knowledge",
+    steps: [
+      "WHAT IT IS: the traditional teaching of a luminous, elastic tether connecting the traveling awareness to the physical body \u2014 usually reported at the forehead, heart, or navel. (Traditional claim, not established \u2014 but reported with remarkable consistency across centuries and cultures.)",
+      "WHAT IT DOES: it stretches infinitely and acts as the homing line \u2014 follow it back and you return to the body. The tradition holds it severs only at physical death, never during travel. Whether literal or symbolic, it answers the beginner's deepest fear: 'what if I can't get back?'",
+      "WHY it matters psychologically: fear of not returning is one of the top exit-blockers. Holding the cord teaching \u2014 there is ALWAYS a way back \u2014 dissolves that block. The reframe works whether you take the cord literally or as the mind's own safety symbol.",
+      "Returning is simple: think of your body, intend return, or follow the cord. Sharp emotion, strong intention toward the physical, or simply deciding 'I'm done' brings you back. Nothing in the literature reports anyone getting stuck.",
+      "If you snap back suddenly (common for beginners): don't be discouraged \u2014 it means you got out. The snap-back is a success with a rough landing. Calm, journal, try again.",
+      "The deeper teaching: the cord is also a metaphor the lineage uses \u2014 the connection between the traveling consciousness and its source is never broken, in projection or in ordinary life. You were never actually separate; the cord just makes it visible."
+    ],
+  },
+  {
+    name: "Protection & Grounding Protocol", by: "Milieu standard", level: "Essential",
+    steps: [
+      "WHAT IT IS: the standard safety practice around every attempt \u2014 set protection before, ground after. WHY it matters: the astral is consistently described across schools as emotionally responsive \u2014 your inner state shapes what you meet. Entering clean and grounded isn't superstition; it's state management.",
+      "BEFORE \u2014 set the field: surround yourself with white or golden light in visualization, and state a clear protective intention: 'Only what serves my highest good may approach me.' Mean it. This is taught as non-negotiable in the milieu.",
+      "BEFORE \u2014 check your state: never practice exhausted, drunk, or in acute emotional turmoil. Emotional stability first \u2014 the responsive nature of the realm means you meet your own weather. Stormy inside, stormy outside.",
+      "BEFORE \u2014 set the return anchor: decide in advance that thinking of your body returns you instantly. Know your exit AND your entrance. The safety briefing takes thirty seconds.",
+      "DURING \u2014 the two rules: (1) never fixate on the physical body's sensations mid-technique \u2014 attention on the body locks you in; stay detached, 'a deeply relaxed floating cloud.' (2) If fear spikes, wiggle your toes or press your feet together \u2014 the physical micro-action re-anchors you gently.",
+      "AFTER \u2014 ground: cold water on the face and hands, food, bare feet on earth. Press Yongquan (KI1, the sole point) if you're shaky \u2014 it's the drain point for excess charge. Grounding isn't optional; it's the landing gear.",
+      "AFTER \u2014 journal: every attempt, every fragment, immediately. Then live your day. The experiences integrate through ordinary life \u2014 the point was never to escape the body but to return to it knowing what you are.",
+      "THE FRAME (Celestial University's verified position): his 35-lesson course 'Navigating the Inner Realms of Consciousness' treats astral projection, lucid dreaming, OBE, and remote viewing as formal curriculum \u2014 'unearthing inner divinity and transcending common perceptions.' The lineage framework underneath (Bonacci): consciousness was never IN the body to begin with \u2014 the body is a receiver, not the source. Projection isn't leaving home; it's remembering you were never confined to the room."
+    ],
+  },
+]
 
 const SOS_STEPS = [
   { t: "Stop everything", d: "Sit or lie down. You are safe. Nothing is chasing you. Say it out loud if you need to: 'I am safe in my body.'" },

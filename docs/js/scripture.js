@@ -137,3 +137,77 @@ chapters: [
 },
 ];
 for (const b of SCRIPTURE_EXTRA) SCRIPTURE.push(b);
+/* Scripture reader batch 2: Ezekiel 1, Psalm 23, John 3, Matthew 13, 1 Cor 15. KJV public domain. */
+const SCRIPTURE_B2 = [
+{
+id: "ezekiel1", name: "Ezekiel 1 — The Wheels", testament: "OT", order: 47,
+intro: "The merkabah vision: wheels within wheels and the four living creatures — the energy body in motion.",
+chapters: [
+{ n: 1, verses: [
+{ n: 4, t: "And I looked, and, behold, a whirlwind came out of the north, a great cloud, and a fire infolding itself, and a brightness was about it, and out of the midst thereof as the colour of amber, out of the midst of the fire.", note: "The vision opens with the classic awakening imagery: whirlwind (the rushing energy), fire infolding itself (the serpent fire coiling), brightness about it (the aura). Every tradition describes the inner fire the same way because it's the same fire." },
+{ n: 5, t: "Also out of the midst thereof came the likeness of four living creatures. And this was their appearance; they had the likeness of a man.", note: "Four living creatures — the fourfold nature of the human being: physical, emotional, mental, spiritual. Four is the number of manifestation, of the complete earthly vehicle." },
+{ n: 10, t: "As for the likeness of their faces, they four had the face of a man, and the face of a lion, on the right side: and they four had the face of an ox on the left side; they four also had the face of an eagle.", note: "Man, lion, ox, eagle — the four fixed signs of the zodiac (Aquarius, Leo, Taurus, Scorpio): the complete circuit of the heavens mapped onto the human energy system. Astrotheology's fingerprints are all over the prophets." },
+{ n: 16, t: "The appearance of the wheels and their work was like unto the colour of a beryl: and they four had one likeness: and their appearance and their work was as it were a wheel in the middle of a wheel.", note: "'A wheel in the middle of a wheel' — the chakras as rotating wheels of energy, one within another. The vision is describing the subtle body: spinning centers of force, each containing the others." },
+{ n: 20, t: "Whithersoever the spirit was to go, they went, thither was their spirit to go; and the wheels were lifted up over against them: for the spirit of the living creature was in the wheels.", note: "The spirit is IN the wheels — consciousness inhabits the energy centers, not the flesh. Move the spirit and the wheels follow: attention directs energy. This is the entire mechanics of the inner work in one verse." },
+{ n: 26, t: "And above the firmament that was over their heads was the likeness of a throne, as the appearance of a sapphire stone: and upon the likeness of the throne was the likeness as the appearance of a man above upon it.", note: "Above the firmament — above the head — the throne: the crown center, the seat of the higher self. The 'man' upon it is the awakened human enthroned in its own highest nature. The whole vision is a map of the body as temple." },
+],
+},
+],
+},
+{
+id: "psalm23", name: "Psalm 23 — The Shepherd", testament: "OT", order: 48,
+intro: "The shepherd psalm as the inner guide: the valley of the shadow is the dark night every practitioner walks.",
+chapters: [
+{ n: 23, verses: [
+{ n: 1, t: "The LORD is my shepherd; I shall not want.", note: "The shepherd is the inner guide — the higher self that leads. 'I shall not want': the guided soul lacks nothing because it has stopped grasping. Want is the disease; guidance is the cure." },
+{ n: 2, t: "He maketh me to lie down in green pastures: he leadeth me beside the still waters.", note: "Green pastures, still waters — the nourished, quieted inner life. The guide doesn't drive you to exhaustion; it leads you to rest. Still waters are the settled mind: no ripples, clear reflection." },
+{ n: 3, t: "He restoreth my soul: he leadeth me in the paths of righteousness for his name's sake.", note: "'He restoreth my soul' — the work is RESTORATION, not acquisition. You are not becoming something new; you are being returned to what you were. The paths of righteousness are the aligned life: right action as the fruit, not the price." },
+{ n: 4, t: "Yea, though I walk through the valley of the shadow of death, I will fear no evil: for thou art with me; thy rod and thy staff they comfort me.", note: "The valley of the shadow — the dark night of the soul, which every serious practitioner walks. Note: the valley is walked THROUGH, not camped in. 'Thy rod and thy staff' — discipline and support, the two tools of the guide: correction and comfort, together." },
+{ n: 5, t: "Thou preparest a table before me in the presence of mine enemies: thou anointest my head with oil; my cup runneth over.", note: "'Thou anointest my head with oil' — the anointing of the head: the crown center, the chrism, the Christos. The oil of anointing poured on the head is the inner consecration — the same image the whole Christ-oil teaching is built on. The cup running over is the overflow of the filled vessel." },
+],
+},
+],
+},
+{
+id: "john3", name: "John 3 — Born Again", testament: "NT", order: 49,
+intro: "The second birth as awakening — and Nicodemus's literalism as the method demonstrated live.",
+chapters: [
+{ n: 3, verses: [
+{ n: 3, t: "Jesus answered and said unto him, Verily, verily, I say unto thee, Except a man be born again, he cannot see the kingdom of God.", note: "Born AGAIN — the second birth is the awakening: the first birth makes the body, the second makes the seer. 'Cannot SEE the kingdom': it's not about going somewhere, it's about perceiving what's already here." },
+{ n: 4, t: "Nicodemus saith unto him, How can a man be born when he is old? can he enter the second time into his mother's womb, and be born?", note: "Nicodemus does what the literal mind always does: hears an inner instruction and tries to perform it with the body. His confusion is the whole problem of literal reading, acted out on stage — and Jesus corrects him, which is the method authorizing itself." },
+{ n: 5, t: "Jesus answered, Verily, verily, I say unto thee, Except a man be born of water and of the Spirit, he cannot enter into the kingdom of God.", note: "Born of water AND of the Spirit — the two births: the water (the natural, the emotional purification) and the Spirit (the awakening). Both are required; the teaching never discards the human, it completes it." },
+{ n: 6, t: "That which is born of the flesh is flesh; and that which is born of the Spirit is spirit.", note: "Flesh begets flesh, Spirit begets Spirit — each level reproduces itself. You cannot think your way to spirit or discipline your way to it; the spiritual birth comes from the spiritual level. The method: expose yourself to the Spirit and let it do the begetting." },
+{ n: 8, t: "The wind bloweth where it listeth, and thou hearest the sound thereof, but canst not tell whence it cometh, and whither it goeth: so is every one that is born of the Spirit.", note: "The wind (pneuma — breath, spirit, same word) blows where it will: the awakened life is not controllable, not schedulable, not ownable. Those born of the Spirit move like weather — trackable by effects, unpredictable by formula." },
+],
+},
+],
+},
+{
+id: "matthew13", name: "Matthew 13 — The Sower", testament: "NT", order: 50,
+intro: "The four soils as four states of the inner ground — plus Jesus' own explanation of why he teaches in parables.",
+chapters: [
+{ n: 13, verses: [
+{ n: 8, t: "But other fell into good ground, and brought forth fruit, some an hundredfold, some sixtyfold, some thirtyfold.", note: "The good ground brings forth fruit — a hundredfold, sixty, thirty: the teaching compounds differently in different prepared minds, but it ALWAYS compounds in prepared ground. The variable is never the seed; it's always the soil." },
+{ n: 13, t: "Therefore speak I to them in parables: because they seeing see not; and hearing they hear not, neither do they understand.", note: "Jesus explains the parable method himself: the crowds see but don't see, hear but don't hear. The parable is a time-release teaching — the outer story for the unready, the inner meaning detonating years later when the student ripens." },
+{ n: 19, t: "When any one heareth the word of the kingdom, and understandeth it not, then cometh the wicked one, and catcheth away that which was sown in his heart. This is he which received seed by the way side.", note: "The wayside soil: the teaching heard but not understood — snatched away because it never took root. Understanding is the rooting; without it, even truth is just birdsong." },
+{ n: 22, t: "He also that received seed among the thorns is he that heareth the word; and the care of this world, and the deceitfulness of riches, choke the word, and he becometh unfruitful.", note: "The thorny soil: the teaching choked by 'the care of this world' — worry and wealth as the two great stranglers. Note it's not persecution that kills most seeds; it's distraction. The world doesn't need to attack the teaching; it just needs to keep you busy." },
+{ n: 23, t: "But he that received seed into the good ground is he that heareth the word, and understandeth it; he which also beareth fruit, and bringeth forth, some an hundredfold, some sixty, some thirty.", note: "Hearing PLUS understanding: the two conditions of the good ground. The teaching's whole method — decode the metaphor (hearing), grasp the instruction (understanding) — is the preparation of the soil. You are the farmer and the field." },
+],
+},
+],
+},
+{
+id: "corinthians15", name: "1 Corinthians 15 — Two Bodies", testament: "NT", order: 51,
+intro: "Paul's two-body doctrine: the natural body and the spiritual body — the scriptural anchor of the subtle-body teaching.",
+chapters: [
+{ n: 15, verses: [
+{ n: 40, t: "There are also celestial bodies, and bodies terrestrial: but the glory of the celestial is one, and the glory of the terrestrial is another.", note: "Celestial bodies and terrestrial bodies — Paul states the two-body doctrine plainly: there is a heavenly vehicle and an earthly vehicle, each with its own glory. The subtle body isn't a later invention; it's in the epistles." },
+{ n: 44, t: "It is sown a natural body; it is raised a spiritual body. There is a natural body, and there is a spiritual body.", note: "'There IS a natural body, and there IS a spiritual body' — present tense: both exist NOW, not just after death. The spiritual body is sown (planted) in this life and raised (activated) by the work. The resurrection is an event in consciousness, available before the grave." },
+{ n: 46, t: "Howbeit that was not first which is spiritual, but that which is natural; and afterward that which is spiritual.", note: "The natural comes first, then the spiritual: the order of the work. You don't skip the body to get to spirit — you go THROUGH the natural, master it, and the spiritual unfolds afterward. First the temple is built, then it's filled." },
+{ n: 51, t: "Behold, I shew you a mystery; We shall not all sleep, but we shall all be changed,", note: "'We shall not all sleep, but we shall all be changed' — transformation without death: the mystery Paul promises is available to the living. The change is the awakening itself — the same event, described from inside the tradition." },
+],
+},
+],
+},
+];
+for (const b of SCRIPTURE_B2) SCRIPTURE.push(b);

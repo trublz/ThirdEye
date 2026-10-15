@@ -315,3 +315,113 @@ chapters: [
 },
 ];
 for (const b of SCRIPTURE_B3) SCRIPTURE.push(b);
+/* Scripture reader batch 4: more decoded passages. KJV public domain. */
+const SCRIPTURE_B4 = [
+{
+id: "exodus3", name: "Exodus 3 — The Burning Bush", testament: "OT", order: 60,
+intro: "The bush that burns without burning: the call, the name, and the holy ground.",
+chapters: [
+{ n: 3, verses: [
+{ n: 2, t: "And the angel of the LORD appeared unto him in a flame of fire out of the midst of a bush: and he looked, and, behold, the bush burned with fire, and the bush was not consumed.", note: "Fire that burns without consuming — the inner fire that illuminates without destroying: consciousness itself. The bush (the ordinary, the common thornbush) carrying the extraordinary: the divine in the commonplace, exactly where you stopped looking." },
+{ n: 5, t: "And he said, Draw not nigh hither: put off thy shoes from off thy feet, for the place whereon thou standest is holy ground.", note: "'Put off thy shoes' — remove what separates your feet from the earth: the call to direct contact, no insulation between you and the holy. Shoes are the buffers we wear against reality; holy ground demands bare feet." },
+{ n: 14, t: "And God said unto Moses, I AM THAT I AM: and he said, Thus shalt thou say unto the children of Israel, I AM hath sent me unto you.", note: "I AM THAT I AM — the name of God as pure being, pure presence: not 'I was' or 'I will be' but I AM. The teaching's core practice hides in the divine name itself: rest in the I AM, the awareness beneath every thought, and you rest in God." },
+],
+},
+],
+},
+{
+id: "exodus20", name: "Exodus 20 — The Ten Commandments", testament: "OT", order: 61,
+intro: "The ten words as energy law: the inner reading of the commandments.",
+chapters: [
+{ n: 20, verses: [
+{ n: 3, t: "Thou shalt have no other gods before me.", note: "No other gods BEFORE me — nothing enthroned above the source: not money, not opinion, not the senses. In the inner reading this is the first law of attention: what you put first rules you. Put the highest first and everything else finds its place." },
+{ n: 7, t: "Thou shalt not take the name of the LORD thy God in vain; for the LORD will not hold him guiltless that taketh his name in vain.", note: "The 'name' is the I AM (Exodus 3:14): taking it 'in vain' is invoking your own being emptily — 'I am' followed by smallness ('I am worthless,' 'I am afraid'). The commandment guards the creative word: never attach I AM to what you don't want to become." },
+{ n: 8, t: "Remember the sabbath day, to keep it holy.", note: "The sabbath — the seventh day, the day of completion: the rhythm of rest built into creation itself. In the inner reading it's the practice of stopping: one day (or one hour) where striving ceases and you rest in being. The system requires the pause; without it, the work devours the worker." },
+],
+},
+],
+},
+{
+id: "psalm91", name: "Psalm 91 — Protection", testament: "OT", order: 62,
+intro: "The protection psalm: the secret place as the inner chamber.",
+chapters: [
+{ n: 91, verses: [
+{ n: 1, t: "He that dwelleth in the secret place of the most High shall abide under the shadow of the Almighty.", note: "'The secret place of the most High' — the inner chamber again, the closet with the shut door (Matthew 6:6). Protection isn't a bubble around you; it's a PLACE you dwell in: the interior refuge. Abide there and the shadow of the Almighty covers you." },
+{ n: 4, t: "He shall cover thee with his feathers, and under his wings shalt thou trust: his truth shall be thy shield and buckler.", note: "Feathers and wings — the softest possible armor: protection as tenderness, not force. 'His TRUTH shall be thy shield': what defends you is reality itself — the true needs no defense, and the false can't survive it." },
+{ n: 11, t: "For he shall give his angels charge over thee, to keep thee in all thy ways.", note: "Angels (messengers, literally) given charge 'in all thy ways' — the teaching's reading: the higher faculties assigned as guardians of the path. The protection is structural: walk the ways and the charge holds." },
+],
+},
+],
+},
+{
+id: "ezekiel37", name: "Ezekiel 37 — Dry Bones", testament: "OT", order: 63,
+intro: "The valley of dry bones: the breath that raises the dead parts of the self.",
+chapters: [
+{ n: 37, verses: [
+{ n: 3, t: "And he said unto me, Son of man, can these bones live? And I answered, O Lord GOD, thou knowest.", note: "'Can these bones live?' — the question put to every practitioner surveying their own dead areas: the deadened feeling, the abandoned dream, the withered discipline. The honest answer is the prophet's: 'thou knowest' — I don't know, but the source does." },
+{ n: 7, t: "So I prophesied as I was commanded: and as I prophesied, there was a noise, and behold a shaking, and the bones came together, bone to his bone.", note: "Bone to his bone — the reassembly happens by PROPHESYING: by speaking the word over the dead places. The teaching's mechanics: the word (vibration, intention) restructures the dead matter. Speak to the bones." },
+{ n: 10, t: "So I prophesied as he commanded me, and the breath came into them, and they lived, and stood up upon their feet, an exceeding great army.", note: "The BREATH came into them and they lived — ruach, pneuma, spirit: the same breath of Genesis 2:7. Structure first (bones together), then breath: the teaching's order — build the vessel, then fill it. An 'exceeding great army': the restored self doesn't just live, it musters." },
+],
+},
+],
+},
+{
+id: "jonah", name: "Jonah — The Descent", testament: "OT", order: 64,
+intro: "Three days in the belly: the descent every calling requires.",
+chapters: [
+{ n: 2, verses: [
+{ n: 1, t: "Then Jonah prayed unto the LORD his God out of the fish's belly,", note: "Prayer 'out of the fish's belly' — the teaching's point: the deepest prayers are prayed from the deepest places. Jonah doesn't pray on the ship; he prays in the dark. The belly is where the calling finally gets heard." },
+{ n: 2, t: "And said, I cried by reason of mine affliction unto the LORD, and he heard me; out of the belly of hell cried I, and thou heardest my voice.", note: "'Out of the belly of hell cried I, and thou heardest' — no depth is too deep for the hearing. The three days in the fish mirror the three days in the tomb: descent precedes resurrection, always, in every story." },
+],
+},
+],
+},
+{
+id: "luke10", name: "Luke 10 — The Good Samaritan", testament: "NT", order: 65,
+intro: "The neighbor as the one in front of you: compassion as the whole law.",
+chapters: [
+{ n: 10, verses: [
+{ n: 33, t: "But a certain Samaritan, as he journeyed, came where he was: and when he saw him, he had compassion on him,", note: "The Samaritan — the outsider, the heretic, the one the audience despised — is the hero: the teaching deliberately makes the 'wrong' person the example. Compassion doesn't check credentials. The priest and Levite had the right doctrine and walked by; the heretic had compassion and stopped." },
+{ n: 34, t: "And went to him, and bound up his wounds, pouring in oil and wine, and set him on his own beast, and brought him to an inn, and took care of him.", note: "Oil and wine — the healing pair: oil (the soothing, the spirit) and wine (the cleansing, the truth). He sets him on his OWN beast: compassion costs the giver his ride. Real mercy always spends something." },
+{ n: 36, t: "Which now of these three, thinkest thou, was neighbour unto him that fell among the thieves?", note: "Jesus flips the question: the lawyer asked 'who IS my neighbor' (who qualifies); Jesus asks 'who PROVED neighbor' (who acted). Neighbor isn't a category — it's a verb. You don't have neighbors; you neighbor." },
+],
+},
+],
+},
+{
+id: "john15", name: "John 15 — The Vine", testament: "NT", order: 66,
+intro: "The vine and the branches: the organic model of the spiritual life.",
+chapters: [
+{ n: 15, verses: [
+{ n: 4, t: "Abide in me, and I in you. As the branch cannot bear fruit of itself, except it abide in the vine; no more can ye, except ye abide in me.", note: "'Abide' — meno, to remain, dwell, stay: the whole instruction in one word. The branch doesn't strain to produce fruit; it ABIDES and fruit happens. The teaching's organic model: connection, not effort, is the mechanism. Striving is the branch trying to be the vine." },
+{ n: 5, t: "I am the vine, ye are the branches: He that abideth in me, and I in him, the same bringeth forth much fruit: for without me ye can do nothing.", note: "'Without me ye can do nothing' — the ego hears insult; the teaching hears mechanics: the cut branch can't fruit, not because it's punished but because it's disconnected. Reconnection is the entire program." },
+],
+},
+],
+},
+{
+id: "corinthians13", name: "1 Corinthians 13 — Love", testament: "NT", order: 67,
+intro: "The love chapter: the nature of the highest, and the end of the partial.",
+chapters: [
+{ n: 13, verses: [
+{ n: 2, t: "And though I have the gift of prophecy, and understand all mysteries, and all knowledge; and though I have all faith, so that I could remove mountains, and have not charity, I am nothing.", note: "Prophecy, mysteries, knowledge, mountain-moving faith — and 'I AM NOTHING' without love: the teaching's hierarchy stated brutally. Gifts without love are noise. Every attainment in this book is weighed on this scale." },
+{ n: 12, t: "For now we see through a glass, darkly; but then face to face: now I know in part; but then shall I know even as also I am known.", note: "'Through a glass, darkly' — the ancient mirror was polished metal, dim and distorted: our current perception of everything. 'Face to face': the promise is direct seeing. 'Then shall I know even as also I am known' — the end of seeking is being fully known by what you sought." },
+{ n: 13, t: "And now abideth faith, hope, charity, these three; but the greatest of these is charity.", note: "Faith, hope, love abide — the three that survive: faith (trust), hope (expectation), love (union). 'The greatest is love' because faith and hope are for the journey; love is the destination. At the end, only the union remains." },
+],
+},
+],
+},
+{
+id: "romans8", name: "Romans 8 — No Condemnation", testament: "NT", order: 68,
+intro: "The Spirit vs. the flesh, and the groaning of creation: Paul's map of liberation.",
+chapters: [
+{ n: 8, verses: [
+{ n: 1, t: "There is therefore now no condemnation to them which are in Christ Jesus, who walk not after the flesh, but after the Spirit.", note: "'NO condemnation' — the verdict on the awakened walk is total acquittal. Condemnation belongs to the old regime; the new walk is after the Spirit. Guilt is the flesh's native language; the Spirit doesn't speak it." },
+{ n: 6, t: "For to be carnally minded is death; but to be spiritually minded is life and peace.", note: "Carnally minded = death, spiritually minded = life AND PEACE: the mind's setting determines the whole state. This is the teaching's master switch — where the mind rests decides everything. Death isn't a place; it's a mindset. So is peace." },
+{ n: 26, t: "Likewise the Spirit also helpeth our infirmities: for we know not what we should pray for as we ought: but the Spirit itself maketh intercession for us with groanings which cannot be uttered.", note: "'Groanings which cannot be uttered' — the Spirit prays THROUGH you when you don't know how: the deep prayer beneath words. When you have no prayer left, the groaning IS the prayer. The teaching's comfort for the wordless: the Spirit intercedes in the silence." },
+],
+},
+],
+},
+];
+for (const b of SCRIPTURE_B4) SCRIPTURE.push(b);

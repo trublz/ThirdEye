@@ -181,10 +181,27 @@ function vMudra(id) {
 }
 
 function vPoints() {
-  return `<h2>📍 Pressure Points</h2><p class="sub">12 key acupressure points. Firm pressure, slow breathing, 1–2 minutes each.</p>` +
-    PRESSURE_POINTS.map(p => `<div class="card" style="border-left:4px solid ${p.color}">
+  return `<h2>📍 Pressure Points</h2><p class="sub">12 key acupressure points. Firm pressure, slow breathing, 1–2 minutes each. Tap any point for the full deep lesson.</p>` +
+    PRESSURE_POINTS.map(p => { const slug = (p.code || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || p.name.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+      const lid = "point-" + ({"ex-hn3":"yintang","gv20":"baihui","li4":"hegu","pc6":"neiguan","lv3":"taichong","ki1":"yongquan","st36":"zusanli","ht7":"shenmen","gb20":"fengchi","pc8":"laogong","ex-hn5":"taiyang","sp6":"sanyinjiao"}[slug] || slug);
+      return `<a class="card" href="#/point/${lid}" style="display:block;border-left:4px solid ${p.color};text-decoration:none;color:inherit">
       <h3>${p.name}</h3><p class="sub">${p.code} · ${p.loc}</p>
-      <p class="sub"><b>How:</b> ${p.how}</p><p class="sub"><b>For:</b> ${p.for}</p></div>`).join("");
+      <p class="sub"><b>How:</b> ${p.how}</p><p class="sub"><b>For:</b> ${p.for}</p>
+      <p style="color:var(--gold);font-size:12px;margin-top:8px">📖 Full deep lesson →</p></a>`; }).join("");
+}
+
+function vPointLesson(id) {
+  const l = PRESSURE_LESSONS.find(x => x.id === id) || PRESSURE_LESSONS[0];
+  const readMin = Math.max(2, Math.round(l.steps.reduce((a, s) => a + s.t.length + s.d.length, 0) / 900));
+  return `<p class="sub"><a href="#/points" style="color:var(--gold)">← Pressure Points</a></p>
+    <h2>${l.icon} ${l.title}</h2>
+    <p class="sub">📖 ${l.steps.length} sections · ~${readMin} min read · FREE</p>
+    <div class="card gold"><p>${l.intro}</p></div>
+    ${l.photo && typeof PHOTOS !== "undefined" ? (Array.isArray(l.photo) ? l.photo : [l.photo]).map(p => PHOTOS[p] ? `<div class="card" style="padding:10px"><img src="${PHOTOS[p]}" alt="Photo for ${l.title}" style="width:100%;border-radius:12px;display:block">${typeof PHOTO_CREDITS !== "undefined" && PHOTO_CREDITS[p] ? `<p class="sub" style="text-align:center;margin:8px 0 2px;font-size:11px;opacity:.75">📷 ${PHOTO_CREDITS[p]}</p>` : ""}</div>` : "").join("") : ""}
+    ${l.diagram && !l.photo && typeof DIAGRAMS !== "undefined" && DIAGRAMS[l.diagram] ? `<div class="card">${DIAGRAMS[l.diagram]}</div>` : ""}` +
+    l.steps.map(s => s.d ? `<div class="card"><h3>${s.t}</h3><p class="sub">${s.d}</p></div>`
+      : `<h3 style="color:var(--gold);margin:22px 0 4px">${s.t}</h3>`).join("") +
+    `<div class="card"><p class="sub">📓 <i>Write in your <a href="#/journal" style="color:var(--gold)">awakening journal</a> what clicked for you. Teaching it back is how it becomes yours.</i></p></div>`;
 }
 
 function vAstral() {
@@ -340,6 +357,7 @@ const routes = [
   [/^#\/fingers$/, vFingers],
   [/^#\/mudra\/([\w-]+)$/, (m) => vMudra(m[1])],
   [/^#\/points$/, vPoints],
+  [/^#\/point\/([a-z0-9-]+)$/, (m) => vPointLesson(m[1])],
   [/^#\/astral$/, vAstral],
   [/^#\/pineal$/, vPineal],
   [/^#\/hearth$/, vHearth],

@@ -211,3 +211,107 @@ chapters: [
 },
 ];
 for (const b of SCRIPTURE_B2) SCRIPTURE.push(b);
+/* Scripture reader batch 3: more decoded passages. KJV public domain. */
+const SCRIPTURE_B3 = [
+{
+id: "genesis2", name: "Genesis 2 — The Garden", testament: "OT", order: 52,
+intro: "Eden as the unfallen mind: the garden, the rivers, and the two trees.",
+chapters: [
+{ n: 2, verses: [
+{ n: 7, t: "And the LORD God formed man of the dust of the ground, and breathed into his nostrils the breath of life; and man became a living soul.", note: "Dust + breath = body + spirit: the human as the meeting of earth and heaven. The 'breath of life' (neshamah) is the divine inbreathing — the same breath the breathwork lessons teach you to master. You are animated dust; the animation is the whole story." },
+{ n: 9, t: "And out of the ground made the LORD God to grow every tree that is pleasant to the sight, and good for food; the tree of life also in the midst of the garden, and the tree of knowledge of good and evil.", note: "Two trees in the midst: the tree of LIFE (unity, the center) and the tree of KNOWLEDGE of good and evil (duality, the split). The garden holds both potentials — the unfallen mind contains the possibility of the fall. Every choice since has been between these two trees." },
+{ n: 10, t: "And a river went out of Eden to water the garden; and from thence it was parted, and became into four heads.", note: "One river becoming four — the single source of life dividing into the fourfold world: the four elements, the four directions, the four aspects of the psyche. Unity expresses as four; the work is remembering the one river." },
+{ n: 21, t: "And the LORD God caused a deep sleep to fall upon Adam, and he slept: and he took one of his ribs, and closed up the flesh instead thereof;", note: "The deep sleep — Adam (consciousness) falls asleep and the division happens IN sleep: the split into masculine and feminine occurs in unconsciousness. We fell asleep and woke up divided; the work is waking up." },
+],
+},
+],
+},
+{
+id: "exodus14", name: "Exodus 14 — The Red Sea", testament: "OT", order: 53,
+intro: "The parting of the waters as the passage through the impossible: the way opens where there was no way.",
+chapters: [
+{ n: 14, verses: [
+{ n: 13, t: "And Moses said unto the people, Fear ye not, stand still, and see the salvation of the LORD, which he will shew to you to day.", note: "'Stand still, and see' — the instruction at the impossible moment is NOT to strive but to be still. The waters don't part for effort; they part for the one who stands still in trust. Stillness as the master technique." },
+{ n: 14, t: "The LORD shall fight for you, and ye shall hold your peace.", note: "The Lord fights while you hold your peace: the higher self handles what the ego cannot. The teaching's division of labor — you do the inner stillness, the higher does the outer miracle." },
+{ n: 21, t: "And Moses stretched out his hand over the sea; and the LORD caused the sea to go back by a strong east wind all that night, and made the sea dry land, and the waters were divided.", note: "The waters divided — the emotional depths (the sea) parted by the wind (spirit, breath). In the inner reading: when the breath/spirit moves, the overwhelming feelings divide and a path appears through them. You walk THROUGH the sea, not around it." },
+{ n: 22, t: "And the children of Israel went into the midst of the sea upon the dry ground: and the waters were a wall unto them on their right hand, and on their left.", note: "Walls of water on both sides — the passage THROUGH the deep, not the removal of it. The feelings don't disappear; they stand aside. This is how every transformation actually works: through, not around." },
+],
+},
+],
+},
+{
+id: "isaiah6", name: "Isaiah 6 — The Throne", testament: "OT", order: 54,
+intro: "The throne vision and the coal: purification of the lips, the mouth as the gate.",
+chapters: [
+{ n: 6, verses: [
+{ n: 1, t: "In the year that king Uzziah died I saw also the Lord sitting upon a throne, high and lifted up, and his train filled the temple.", note: "'In the year that king Uzziah died' — the vision comes when the old king dies: the old ruling ego must die before the throne is seen. Every theophany in the canon follows an ending." },
+{ n: 3, t: "And one cried unto another, and said, Holy, holy, holy, is the LORD of hosts: the whole earth is full of his glory.", note: "'The whole earth is FULL of his glory' — not heaven, EARTH. The vision's punchline: the divine isn't elsewhere, it's everywhere, fully present in the material world. The only thing missing was the eyes to see it." },
+{ n: 6, t: "Then flew one of the seraphims unto me, having a live coal in his hand, which he had taken with the tongs from off the altar:", note: "The live coal from the altar — fire applied to the prophet. Purification is always by fire in this manual: the dross burns, the gold remains. The altar's fire is the same inner fire the energy teachings map." },
+{ n: 7, t: "And he laid it upon my mouth, and said, Lo, this hath touched thy lips; and thine iniquity is taken away, and thy sin purged.", note: "The coal touches the LIPS — the mouth, the organ of speech, is purified. Why the mouth? Because the word creates: as the Logos teaching holds, speech is the creative act. The purified mouth speaks only what builds." },
+],
+},
+],
+},
+{
+id: "daniel7", name: "Daniel 7 — The Four Beasts", testament: "OT", order: 55,
+intro: "The four beasts from the sea: the kingdoms as the ages of the soul.",
+chapters: [
+{ n: 7, verses: [
+{ n: 3, t: "And four great beasts came up from the sea, diverse one from another.", note: "Four beasts from the SEA — the sea is the collective unconscious, the deep waters of the psyche. The beasts (empires, ages, inner regimes) rise from the depths: history and psychology drawn from the same well." },
+{ n: 9, t: "I beheld till the thrones were cast down, and the Ancient of days did sit, whose garment was white as snow, and the hair of his head like the pure wool: his throne was like the fiery flame, and his wheels as burning fire.", note: "The Ancient of Days — the timeless self enthroned above the beasts: hair white as wool (wisdom, age), throne of flame, wheels of fire (the same wheels as Ezekiel's). Above every inner regime sits the one who was never ruled by any of them." },
+{ n: 13, t: "I saw in the night visions, and, behold, one like the Son of man came with the clouds of heaven, and came to the Ancient of days, and they brought him near before him.", note: "'One like the Son of man' brought before the Ancient of Days — the human (son of man) presented to the eternal: the moment of the inner marriage, the temporal self united with the timeless. The 'clouds of heaven' are the glory-body, the light-vehicle." },
+],
+},
+],
+},
+{
+id: "matthew5", name: "Matthew 5 — The Beatitudes", testament: "NT", order: 56,
+intro: "The Beatitudes as nine states of consciousness: the blessed life from the inside.",
+chapters: [
+{ n: 5, verses: [
+{ n: 3, t: "Blessed are the poor in spirit: for theirs is the kingdom of heaven.", note: "'Poor in spirit' — emptied of ego-clutter, not clinging to spiritual possessions either. The kingdom belongs to the empty: only the emptied vessel can be filled. The first beatitude is the prerequisite of all the rest." },
+{ n: 4, t: "Blessed are they that mourn: for they shall be comforted.", note: "They that mourn — those who grieve the world's state AND their own: mourning as the honest response to seeing clearly. The comfort isn't the removal of sorrow but the presence found inside it." },
+{ n: 5, t: "Blessed are the meek: for they shall inherit the earth.", note: "The meek inherit the EARTH — not heaven, earth: the gentle end up ruling the material realm because they don't grasp at it. Non-domination as the winning strategy, stated as a beatitude." },
+{ n: 8, t: "Blessed are the pure in heart: for they shall see God.", note: "'Pure in heart' — the single, undivided heart: no split between inner and outer. 'They shall SEE God': purity of heart is presented as an organ of perception. Clean the lens and the vision comes." },
+{ n: 14, t: "Ye are the light of the world. A city that is set on an hill cannot be hid.", note: "'YE are the light' — not 'you will become' or 'you should be': you ARE. The city on a hill cannot be hid — the awakened life is visible by nature; hiding it is impossible, and trying is the only failure." },
+],
+},
+],
+},
+{
+id: "matthew7", name: "Matthew 7 — Ask, Seek, Knock", testament: "NT", order: 57,
+intro: "The three verbs of the spiritual path, and the narrow gate.",
+chapters: [
+{ n: 7, verses: [
+{ n: 7, t: "Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you:", note: "Ask, seek, knock — the three escalating verbs: asking (prayer), seeking (search), knocking (persistent action). Each gets its answer: given, found, opened. The teaching's promise is mechanical: the door opens to knocking, not to wishing." },
+{ n: 13, t: "Enter ye in at the strait gate: for wide is the gate, and broad is the way, that leadeth to destruction, and many there be which go in thereat:", note: "The strait (narrow) gate vs. the broad way: the path is narrow because it requires precision — attention, discipline, honesty. The broad way is broad because it requires nothing. 'Many' go broad; the few go narrow. The math of awakening." },
+{ n: 14, t: "Because strait is the gate, and narrow is the way, which leadeth unto life, and few there be that find it.", note: "'Few there be that FIND it' — the gate must be found, not just entered: discernment precedes discipline. This is why the manual exists: to help the few find the gate." },
+],
+},
+],
+},
+{
+id: "luke15", name: "Luke 15 — The Prodigal Son", testament: "NT", order: 58,
+intro: "The soul's round trip: leaving the father's house, the far country, and the return.",
+chapters: [
+{ n: 15, verses: [
+{ n: 13, t: "And not many days after the younger son gathered all together, and took his journey into a far country, and there wasted his substance with riotous living.", note: "The far country is the senses: the soul takes its inheritance (its energy, its attention) and spends it 'with riotous living' — scattered on the outer. Every life has a far-country chapter; the parable normalizes it as part of the journey, not the end of it." },
+{ n: 17, t: "And when he came to himself, he said, How many hired servants of my father's have bread enough and to spare, and I perish with hunger!", note: "'When he came to HIMSELF' — the turning point in four words: the return begins with self-recollection. He doesn't get rescued; he REMEMBERS. Every awakening starts the same way: coming to yourself in the far country." },
+{ n: 20, t: "And he arose, and came to his father. But when he was yet a great way off, his father saw him, and had compassion, and ran, and fell on his neck, and kissed him.", note: "'When he was yet a great way off, his father saw him, and RAN' — the father runs to meet the returning son: grace meets effort more than halfway. You take the first step; the universe sprints the rest. The robe, the ring, the feast — the restoration is total, not probationary." },
+],
+},
+],
+},
+{
+id: "john14", name: "John 14 — Many Mansions", testament: "NT", order: 59,
+intro: "The Father's house with many rooms: the levels of consciousness as dwelling places.",
+chapters: [
+{ n: 14, verses: [
+{ n: 2, t: "In my Father's house are many mansions: if it were not so, I would have told you. I go to prepare a place for you.", note: "'Many mansions' (monai — dwelling places, stations): the Father's house has ROOMS — levels, degrees, stations of consciousness. The spiritual life isn't one room; it's a house. 'I go to prepare a place' — the teacher goes ahead to ready the next station." },
+{ n: 6, t: "Jesus saith unto him, I am the way, the truth, and the life: no man cometh unto the Father, but by me.", note: "In the inner reading, 'me' is the awakened center — the Christos within, not the historical figure as gatekeeper: no one reaches the Father (the source) except THROUGH the awakened self. The way is not a person to follow but a state to enter." },
+],
+},
+],
+},
+];
+for (const b of SCRIPTURE_B3) SCRIPTURE.push(b);

@@ -75,6 +75,7 @@ const TILES = [
   { h: "#/shilajit", icon: "🧱", t: "Shilajit", d: "The rock you eat: minerals, power & safe use" },
   { h: "#/manifest", icon: "🧲", t: "Manifestation", d: "How it works, the pineal link & the daily protocol" },
   { h: "#/bible", icon: "\uD83D\uDCDA", t: "The Bible", d: "The metaphor manual: decode it, enter the inner chamber" },
+  { h: "#/scripture", icon: "\uD83D\uDCD6", t: "Scripture", d: "Bible + Apocrypha in order, KJV text with decoded notes" },
   { h: "#/sos", icon: "🆘", t: "Grounding SOS", d: "When it's too much — use this NOW" },
   { h: "#/journal", icon: "📓", t: "Journal", d: "Log signs, dreams & synchronicities" },
   { h: "#/practice", icon: "🔥", t: "Daily Practice", d: "Streaks & non-negotiable habits" },
@@ -278,7 +279,7 @@ function vManifest() {
 }
 
 function vBible() {
-  const ids = ["bible-decoded", "bible-metaphors", "bible-inner-chamber", "bible-prophets-one", "bible-ot", "bible-nt", "bible-apocrypha", "bible-enoch"];
+  const ids = ["bible-decoded", "bible-metaphors", "bible-inner-chamber", "bible-prophets-one", "bible-ot", "bible-nt", "bible-apocrypha", "bible-enoch", "removed-books", "removed-books-2"];
   const ls = ids.map(id => HEARTH_LESSONS.find(l => l.id === id)).filter(Boolean);
   return `<h2>\uD83D\uDCDA The Bible Section</h2>
   <p class="sub">The Bible as a metaphor manual for inner work: how to decode it, the inner chamber, the one teaching behind Jesus, Muhammad and Buddha — plus the Old Testament, New Testament and lost books, decoded.</p>` +
@@ -357,6 +358,32 @@ function checkIn() {
   render();
 }
 
+/* ---------- scripture reader ---------- */
+function vScripture() {
+  const books = [...SCRIPTURE].sort((a, b) => a.order - b.order);
+  return `<h2>\uD83D\uDCDA Scripture Reader</h2>
+  <p class="sub">The Bible and the Apocrypha in canonical order, King James text (public domain) — with the metaphor decoded verse by verse. Tap \uD83D\uDD0D on any verse to see what it means.</p>` +
+    books.map(b => `<a class="tile" href="#/scripture/${b.id}"><div class="icon">\uD83D\uDCD6</div><h3>${b.name}</h3><p>${b.intro.slice(0, 95)}\u2026</p></a>`).join("");
+}
+function vScriptureBook(id) {
+  const b = SCRIPTURE.find(x => x.id === id);
+  if (!b) return `<h2>Not found</h2>`;
+  return `<h2>\uD83D\uDCD6 ${b.name}</h2><p class="sub">${b.intro}</p>` +
+    b.chapters.map(c => `<a class="tile" href="#/scripture/${b.id}/${c.n}"><div class="icon">\uD83D\uDCC4</div><h3>Chapter ${c.n}</h3><p>${c.verses.length} verses with notes</p></a>`).join("");
+}
+function vScriptureChapter(bookId, chN) {
+  const b = SCRIPTURE.find(x => x.id === bookId);
+  const c = b && b.chapters.find(x => x.n === Number(chN));
+  if (!c) return `<h2>Not found</h2>`;
+  const verses = c.verses.map(v => `
+    <div class="card" style="margin-bottom:8px">
+      <p><b style="color:var(--gold)">${v.n}</b> ${v.t}</p>
+      ${v.note ? `<a href="javascript:void(0)" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'" style="color:var(--gold);font-size:14px">\uD83D\uDD0D what this means</a><div style="display:none;margin-top:8px;padding:10px;border-left:3px solid var(--gold);background:rgba(255,215,0,.06);border-radius:8px"><p class="sub" style="margin:0">${v.note}</p><p style="margin:8px 0 0"><a href="#/hearth/bible-metaphors" style="color:var(--gold);font-size:13px">Learn the decoding method \u2192</a></p></div>` : ""}
+    </div>`).join("");
+  return `<h2>${b.name} ${c.n} <span class="sub">KJV</span></h2>
+  <p class="sub"><a href="#/scripture/${b.id}" style="color:var(--gold)">\u2190 ${b.name}</a> · <a href="#/scripture" style="color:var(--gold)">All books</a></p>${verses}`;
+}
+
 /* ---------- router ---------- */
 const routes = [
   [/^#\/?$/, vHome],
@@ -380,6 +407,9 @@ const routes = [
   [/^#\/shilajit$/, vShilajit],
   [/^#\/manifest$/, vManifest],
   [/^#\/bible$/, vBible],
+  [/^#\/scripture$/, vScripture],
+  [/^#\/scripture\/([\w-]+)$/, (m) => vScriptureBook(m[1])],
+  [/^#\/scripture\/([\w-]+)\/(\d+)$/, (m) => vScriptureChapter(m[1], m[2])],
   [/^#\/sos$/, vSos],
   [/^#\/journal$/, vJournal],
   [/^#\/practice$/, vPractice],

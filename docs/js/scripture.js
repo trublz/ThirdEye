@@ -516,3 +516,31 @@ chapters: [
 },
 ];
 for (const b of SCRIPTURE_B5) SCRIPTURE.push(b);
+/* Scripture reader batch 6: Revelation 7 + Revelation 14 — the two 144,000 chapters. KJV public domain. */
+const SCRIPTURE_B6 = [
+{
+id: "revelation7", name: "Revelation 7 — The Sealing", testament: "NT", order: 77,
+intro: "The 144,000 sealed from the tribes — the number built tribe by tribe, then the uncountable multitude.",
+chapters: [
+{ n: 7, verses: [
+{ n: 3, t: "Saying, Hurt not the earth, neither the sea, nor the trees, till we have sealed the servants of our God in their foreheads.", note: "'Sealed... IN THEIR FOREHEADS' — the brow, the ajna center, the third-eye region: the seal goes on the seat of inner sight. Not a stamp on the skin — a mark on consciousness. For the full decoding of the number and the seal, see the 144,000 lesson." },
+{ n: 4, t: "And I heard the number of them which were sealed: and there were sealed an hundred and forty and four thousand of all the tribes of the children of Israel.", note: "'I HEARD the number' — heard, not saw: the number is announced, proclaimed — it's a teaching, not a sighting. 144,000 = 12 × 12 × 1,000: the complete human (tribes × apostles) times divine fullness. The full math is torn apart in the 144,000 lesson." },
+{ n: 9, t: "After this I beheld, and, lo, a great multitude, which no man could number, of all nations, and kindreds, and people, and tongues, stood before the throne, and before the Lamb, clothed with white robes, and palms in their hands;", note: "IMMEDIATELY after the numbered 144,000 comes the UNNUMBERABLE multitude — 'which no man could number.' The text contrasts them on purpose: the 144,000 is the NUMBER (the pattern, the measure), the multitude is the PEOPLE. Don't mistake the blueprint for the building." },
+{ n: 14, t: "And I said unto him, Sir, thou knowest. And he said to me, These are they which came out of great tribulation, and have washed their robes, and made them white in the blood of the Lamb.", note: "'Came out of GREAT TRIBULATION' — the sealed aren't spared the fire; they're made IN it. 'Washed their robes... in the blood of the Lamb' — paradox as method: white through red, purity through sacrifice. The tribulation isn't the obstacle to sealing — it's the furnace of it." },
+],
+},
+],
+},
+{
+id: "revelation14", name: "Revelation 14 — The Lamb and the 144,000", testament: "NT", order: 78,
+intro: "The Lamb on Mount Sion with the 144,000 — the name on the forehead, the new song, the harvest.",
+chapters: [
+{ n: 14, verses: [
+{ n: 1, t: "And I looked, and, lo, a Lamb stood on the mount Sion, and with him an hundred forty and four thousand, having his Father's name written in their foreheads.", note: "The LAMB on Mount SION — the transformed self at the high place (the crown, elevated consciousness) — WITH him the 144,000: not below worshipping, WITH him, at the height. 'His Father's NAME written in their FOREHEADS' — identity rewritten at the brow center: the sealed carry the source's nature at the seat of perception. Union, not audience." },
+{ n: 3, t: "And they sung as it were a new song before the throne, and before the four beasts, and the elders: and no man could learn that song but the hundred and forty and four thousand, which were redeemed from the earth.", note: "'A NEW SONG... no man could learn that song but the 144,000' — the song can't be TAUGHT, only become: it's the sound of the sealed state itself. You don't learn it; you become the kind of instrument that plays it. 'Redeemed FROM the earth' — lifted out of the earthly register, not evacuated from the planet." },
+],
+},
+],
+},
+];
+for (const b of SCRIPTURE_B6) SCRIPTURE.push(b);

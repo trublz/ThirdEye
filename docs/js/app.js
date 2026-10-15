@@ -74,6 +74,7 @@ const TILES = [
   { h: "#/tesla", icon: "\u26A1", t: "Tesla", d: "The man, his research, 3-6-9 & the lost machines" },
   { h: "#/shilajit", icon: "🧱", t: "Shilajit", d: "The rock you eat: minerals, power & safe use" },
   { h: "#/manifest", icon: "🧲", t: "Manifestation", d: "How it works, the pineal link & the daily protocol" },
+  { h: "#/bible", icon: "\uD83D\uDCDA", t: "The Bible", d: "The metaphor manual: decode it, enter the inner chamber" },
   { h: "#/sos", icon: "🆘", t: "Grounding SOS", d: "When it's too much — use this NOW" },
   { h: "#/journal", icon: "📓", t: "Journal", d: "Log signs, dreams & synchronicities" },
   { h: "#/practice", icon: "🔥", t: "Daily Practice", d: "Streaks & non-negotiable habits" },
@@ -149,6 +150,7 @@ function vLuminaries() {
       <p class="sub"><b style="color:var(--gold)">What it IS:</b> ${l.astro}</p>
       <p class="sub"><b style="color:var(--gold)">The myth:</b> ${l.myth}</p>
       <p class="sub"><b style="color:var(--gold)">Why this day:</b> ${l.daywhy}</p>
+      ${l.polarity ? `<p class="sub"><b style="color:var(--gold)">Polarity:</b> ${l.polarity}</p>` : ""}
       <p class="sub"><b style="color:var(--gold)">What it rules in you:</b> ${l.rules}</p>
       <p class="sub"><b style="color:var(--gold)">How it connects to your body:</b> ${l.body}</p>
       <p class="sub"><b style="color:var(--gold)">How to work with it:</b> ${l.practice}</p>
@@ -275,6 +277,14 @@ function vManifest() {
     ls.map(l => `<a class="tile" href="#/hearth/${l.id}"><div class="icon">${l.icon}</div><h3>${l.title}</h3><p>${l.intro.slice(0, 95)}\u2026</p></a>`).join("");
 }
 
+function vBible() {
+  const ids = ["bible-decoded", "bible-metaphors", "bible-inner-chamber", "bible-prophets-one", "bible-ot", "bible-nt", "bible-apocrypha", "bible-enoch"];
+  const ls = ids.map(id => HEARTH_LESSONS.find(l => l.id === id)).filter(Boolean);
+  return `<h2>\uD83D\uDCDA The Bible Section</h2>
+  <p class="sub">The Bible as a metaphor manual for inner work: how to decode it, the inner chamber, the one teaching behind Jesus, Muhammad and Buddha — plus the Old Testament, New Testament and lost books, decoded.</p>` +
+    ls.map(l => `<a class="tile" href="#/hearth/${l.id}"><div class="icon">${l.icon}</div><h3>${l.title}</h3><p>${l.intro.slice(0, 95)}\u2026</p></a>`).join("");
+}
+
 function vLabels() {
   return `<h2>🏷️ The Labels</h2>
   <p class="sub">Every major diagnosis, examined through three lenses: what psychiatry says, what it may mean spiritually, what the pineal gland has to do with it — and what it could have to do with an awakening. Education, not diagnosis. Nothing here replaces professional help.</p>
@@ -369,6 +379,7 @@ const routes = [
   [/^#\/tesla$/, vTesla],
   [/^#\/shilajit$/, vShilajit],
   [/^#\/manifest$/, vManifest],
+  [/^#\/bible$/, vBible],
   [/^#\/sos$/, vSos],
   [/^#\/journal$/, vJournal],
   [/^#\/practice$/, vPractice],

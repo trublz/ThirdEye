@@ -735,3 +735,96 @@ chapters: [
 },
 ];
 for (const b of SCRIPTURE_B8) SCRIPTURE.push(b);
+/* Scripture reader batch 9: more decoded passages. KJV public domain. */
+const SCRIPTURE_B9 = [
+{
+id: "psalm27", name: "Psalm 27 — Light", testament: "OT", order: 95,
+intro: "David's war psalm: the Lord as light and salvation, and the one thing desired.",
+chapters: [
+{ n: 27, verses: [
+{ n: 1, t: "The LORD is my light and my salvation; whom shall I fear? the LORD is the strength of my life; of whom shall I be afraid?", note: "'The LORD is my LIGHT' — light as the first identity of God here: illumination before rescue. 'My SALVATION' — rescue. 'The STRENGTH of my life' — the fortress. Three titles, then the question twice: 'whom shall I fear? ... of whom shall I be afraid?' Fear is answered not with arguments but with IDENTITIES: when you know WHO is yours, the 'whom' of fear has no answer." },
+{ n: 4, t: "One thing have I desired of the LORD, that will I seek after; that I may dwell in the house of the LORD all the days of my life, to behold the beauty of the LORD, and to enquire in his temple.", note: "'ONE THING have I desired' — the whole psalm narrows to a single want: not victory, not safety — DWELLING. 'To BEHOLD the beauty of the LORD' — contemplation as the goal, not a means. The teaching's summit: beneath every desire is this one — to live inside the presence and look at the beautiful. All other wants are this one wearing costumes." },
+{ n: 14, t: "Wait on the LORD: be of good courage, and he shall strengthen thine heart: wait, I say, on the LORD.", note: "'WAIT on the LORD' — twice, bookending the verse like a frame: wait... wait, I SAY. Waiting as the final command of the war psalm — not charge, not strive: WAIT. 'He shall STRENGTHEN thine heart' — the heart gets its strength IN the waiting, not after it. Courage isn't the absence of delay; it's what the delay produces." },
+],
+},
+],
+},
+{
+id: "isaiah9", name: "Isaiah 9 — The Child", testament: "OT", order: 96,
+intro: "The great light prophecy: unto us a child is born, and the government on his shoulder.",
+chapters: [
+{ n: 9, verses: [
+{ n: 2, t: "The people that walked in darkness have seen a great light: they that dwell in the land of the shadow of death, upon them hath the light shined.", note: "'The people that WALKED IN DARKNESS have seen a GREAT LIGHT' — the light comes TO the darkness; the people don't climb out first. 'The land of the SHADOW OF DEATH' — shadow, not death itself: the darkness is a shadow, which means there's a light casting it. The teaching's hope: the darkest address in the verse is exactly where the light shows up." },
+{ n: 6, t: "For unto us a child is born, unto us a son is given: and the government shall be upon his shoulder: and his name shall be called Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace.", note: "'Unto us a CHILD is born' — the answer to the darkness is not an army but a BABY: power arriving as vulnerability. 'The GOVERNMENT shall be upon his SHOULDER' — the weight of rule carried on one shoulder: authority as burden borne, not seized. The five names are five offices: Wonder (awe), Counsellor (wisdom), mighty God (power), everlasting Father (care), Prince of Peace (shalom). The complete ruler in one child." },
+],
+},
+],
+},
+{
+id: "job38", name: "Job 38 — The Whirlwind", testament: "OT", order: 97,
+intro: "God answers from the whirlwind: where were you when the foundations were laid?",
+chapters: [
+{ n: 38, verses: [
+{ n: 4, t: "Where wast thou when I laid the foundations of the earth? declare, if thou hast understanding.", note: "'WHERE WAST THOU when I laid the foundations of the earth?' — the question that ends all questions. After 37 chapters of Job and his friends theologizing about suffering, God doesn't explain — he ASKS. The teaching's humility: every theory of 'why' dissolves before this one question. You weren't there for the foundations; you don't get the blueprint. 'Declare, IF thou hast understanding' — the gentlest possible checkmate." },
+{ n: 7, t: "When the morning stars sang together, and all the sons of God shouted for joy,", note: "'The MORNING STARS SANG TOGETHER' — creation as MUSIC: the stars sang at the founding. 'All the sons of God SHOUTED FOR JOY' — joy as the original atmosphere of existence. Before the suffering, before the questions: singing. The teaching's deepest memory: the universe began as a choir, and every joy you feel is an echo of that first song." },
+],
+},
+],
+},
+{
+id: "luke15", name: "Luke 15 — The Prodigal", testament: "NT", order: 98,
+intro: "The lost parables: the sheep, the coin, and the son who came home.",
+chapters: [
+{ n: 15, verses: [
+{ n: 20, t: "And he arose, and came to his father. But when he was yet a great way off, his father saw him, and had compassion, and ran, and fell on his neck, and kissed him.", note: "'When he was YET A GREAT WAY OFF, his father SAW him' — the father was WATCHING: scanning the horizon, waiting. 'And RAN' — the patriarch running: undignified, robe hiked up, sprinting toward the shameful son. The teaching's image of grace: you don't clean up and walk home to a stern judge — you turn toward home and the Father is already running. The distance is yours; the running is his." },
+{ n: 32, t: "It was meet that we should make merry, and be glad: for this thy brother was dead, and is alive again; and was lost, and is found.", note: "'Was DEAD, and is ALIVE again; was LOST, and is FOUND' — the father's summary, twice spoken (v. 24, v. 32): dead/alive, lost/found. The pairs define the whole human story. And note who it's spoken TO: the older brother, the one who never left but never celebrated. The parable's real target isn't the prodigal — it's the righteous one who can't rejoice. Which brother are you?" },
+],
+},
+],
+},
+{
+id: "romans12", name: "Romans 12 — The Living Sacrifice", testament: "NT", order: 99,
+intro: "The practical turn of Romans: the body as sacrifice, the mind renewed.",
+chapters: [
+{ n: 12, verses: [
+{ n: 1, t: "I beseech you therefore, brethren, by the mercies of God, that ye present your bodies a living sacrifice, holy, acceptable unto God, which is your reasonable service.", note: "'Present your BODIES a LIVING sacrifice' — not dead on an altar: LIVING, breathing, walking around sacrificed. The body itself as the offering — sleep, food, work, rest, all of it laid down. 'Which is your REASONABLE service' — reasonable, logical: given the mercies (the previous 11 chapters), this is the only sane response. Worship isn't singing; it's the body, offered, alive." },
+{ n: 2, t: "And be not conformed to this world: but be ye transformed by the renewing of your mind, that ye may prove what is that good, and acceptable, and perfect, will of God.", note: "'Be NOT CONFORMED to this world' — conformed: pressed into its mold, taking its shape. 'But be ye TRANSFORMED' — metamorphoo: the caterpillar word, total change of form. The mechanism: 'by the RENEWING of your MIND.' Transformation isn't behavior modification — it's mind renovation. Change the thinking, the life follows. The world's mold or the mind's renewal: those are the only two options." },
+],
+},
+],
+},
+{
+id: "colossians3", name: "Colossians 3 — Above", testament: "NT", order: 100,
+intro: "Set your affection on things above: the risen life and the new wardrobe.",
+chapters: [
+{ n: 3, verses: [
+{ n: 2, t: "Set your affection on things above, not on things on the earth.", note: "'SET your affection on things ABOVE' — set: a deliberate placement, like setting a compass. Affection (the loving, the longing) has a DIRECTION, and you choose it. 'Not on things on the earth' — not hatred of earth, but demotion of it: earth-things as servants, not masters. The teaching's daily practice: every morning, set the affection upward before the world sets it for you." },
+{ n: 3, t: "For ye are dead, and your life is hid with Christ in God.", note: "'Ye ARE dead' — past tense, already accomplished: the old self died. 'Your life is HID WITH CHRIST IN GOD' — hid: concealed, secure, stored. Your real life isn't visible — it's hidden inside Christ inside God, like a letter inside an envelope inside a safe. The visible life is the shell; the hid life is the substance. When the shell cracks, the hid life remains." },
+],
+},
+],
+},
+{
+id: "hebrews12", name: "Hebrews 12 — The Cloud", testament: "NT", order: 101,
+intro: "The cloud of witnesses, the discipline of the Father, and the unshakable kingdom.",
+chapters: [
+{ n: 12, verses: [
+{ n: 1, t: "Wherefore seeing we also are compassed about with so great a cloud of witnesses, let us lay aside every weight, and the sin which doth so easily beset us, and let us run with patience the race that is set before us,", note: "'Compassed about with so great a CLOUD OF WITNESSES' — the heroes of chapter 11 aren't gone; they're the crowd in the stands. 'Lay aside EVERY WEIGHT' — weights aren't sins: they're the heavy-but-legal things (comforts, grudges, busyness) that slow the runner. 'The sin which doth SO EASILY BESET us' — besetting: the one that wraps around YOUR ankles specifically. Strip the weights, cut the wrap, run YOUR race — 'set before US,' not before them." },
+{ n: 11, t: "Now no chastening for the present seemeth to be joyous, but grievous: nevertheless afterward it yieldeth the peaceable fruit of righteousness unto them which are exercised thereby.", note: "'No chastening for the present SEEMETH to be joyous, but GRIEVOUS' — the text doesn't pretend discipline feels good: it feels grievous. 'NEVERTHELESS AFTERWARD' — the two most important words: afterward. 'It YIELDETH the peaceable fruit of righteousness' — chastening is FARMING: grievous planting, peaceable harvest. 'Unto them which are EXERCISED thereby' — exercised: trained, worked out. The pain is the gym; the fruit is the muscle." },
+],
+},
+],
+},
+{
+id: "peter5", name: "1 Peter 5 — The Care", testament: "NT", order: 102,
+intro: "The shepherd's charge: humility, the cast care, and the roaring lion.",
+chapters: [
+{ n: 5, verses: [
+{ n: 7, t: "Casting all your care upon him; for he careth for you.", note: "'CASTING ALL your care upon him' — casting: a violent throw, like casting a net. Not placing politely — THROWING. 'ALL your care' — all of it, no holding back a little for yourself. 'For HE CARETH FOR YOU' — the reason is his care, not your competence. The teaching's practice: the nightly cast — before sleep, throw the whole pile. What's carried by him doesn't need carrying by you." },
+{ n: 8, t: "Be sober, be vigilant; because your adversary the devil, as a roaring lion, walketh about, seeking whom he may devour:", note: "'BE SOBER, be VIGILANT' — sober: clear-headed, un-drunk (on anything); vigilant: awake, watching. 'As a ROARING LION' — note the AS: like a lion, not a lion — the roar is theater, the threat is real but the form is mimicry. 'Seeking WHOM he MAY devour' — whom he MAY: permission is involved. The sober and vigilant aren't on the menu." },
+],
+},
+],
+},
+];
+for (const b of SCRIPTURE_B9) SCRIPTURE.push(b);

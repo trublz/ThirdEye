@@ -4715,3 +4715,89 @@ for (const l of BEYONDPOLES_LESSONS) HEARTH_LESSONS.push(l);
   };
   for (var id in M) { var l = HEARTH_LESSONS.find(function(x){return x.id===id;}); if (l) l.photo = M[id]; }
 })();
+/* BATCH 1 EXPANSIONS — append to existing lessons. Generated 2026-10-16.
+   Voice: Indica, teach-like-to-a-baby. Every claim labeled. No copyrighted text.
+   v5 -> tesla-369 | v6 -> temple | v7 djed medu -> SKIPPED (see note below)
+   v8 -> bible-144000 | v2 -> symbols-symmetry
+*/
+const BATCH1_EXPAND = {
+  "tesla-369": [
+    {
+      t: "The TikTok 369 method (and what it really is)",
+      d: "Okay baby, this one has no speech in the video, but it is the famous 3-6-9 writing ritual all over TikTok: write your intention 3 TIMES in the morning, 6 TIMES in the afternoon, and 9 TIMES at night — for 21 to 45 days straight. Here is the honest part, and I will not let you skip it: this is a 2020 TIKTOK CREATION — a June 2020 TikTok by Clark Kegley is widely cited as the breakout — and Tesla NEVER taught it. It is a modern journaling technique wearing a Tesla costume. No study has ever tested the 369 method itself. So what is it, really? A focusing practice. I will show you exactly how to do it next."
+    },
+    {
+      t: "How to do the 3-6-9 writing ritual (the actual technique)",
+      d: "THE PRACTICE: (1) Pick ONE intention and write it in the PRESENT TENSE, like it is already true: ’I am calm and money finds me.’ (2) In the MORNING, write it 3 times — slow, by hand, feeling each word. (3) In the AFTERNOON, write it 6 times. (4) At NIGHT before sleep, write it 9 times. (5) Do this for 21 days minimum, same sentence every day. The rules of the teaching: never write what you do NOT want (the frame says attention feeds whatever you point it at), and feel the emotion of already-having while you write. That is the whole ritual, baby — three sessions a day, 18 total writings, one unchanging sentence."
+    },
+    {
+      t: "Why it works — and what it does NOT do",
+      d: "HONEST LABELS, front and center. What it plausibly does: acts as ATTENTION TRAINING — writing a goal down and repeating it daily keeps your focus on the goal, and there is small-study support for goal-writing improving follow-through (Gail Matthews’s work is the one usually cited). Repetition builds habit; the numbers give the habit a skeleton. UNTESTED: no research has tested the 369 pattern itself — the 3-6-9 numbers are the ritual’s flavor, not its engine. What it does NOT do: no scientific evidence that writing a sentence 18 times a day manifests outcomes through number-magic. The frame’s claim (numbers carry the universe’s key) sits on top of the practice — the practice itself is journaling with a costume on. Do it for what it is and it is a solid focusing habit."
+    }
+  ],
+  "temple": [
+    {
+      t: "Luke 17:21 — the two translations (Documented)",
+      d: "The verse reads ’the kingdom of God is within you’ in the King James. Here is the real debate, baby — the Greek phrase is ἐντὸς ὑμῶν (ENTOS HYMON), and it is genuinely AMBIGUOUS: ’within you,’ ’among you,’ and ’in your midst’ are all legitimate renderings of the same Greek. The King James and Young’s Literal say ’within you.’ But most modern translations — NIV, ESV, NASB, NET — say ’in your midst’ or ’among you.’ The main reason scholars lean modern: Jesus was talking to the PHARISEES, who were hostile to him, so ’the kingdom is secretly inside you’ would be a strange thing to say to them. Their reading: the kingdom was present because the KING was standing in their midst. This is a DOCUMENTED translation debate, not something anyone made up."
+    },
+    {
+      t: "The allegorical read — the skull as heaven (this teaching’s frame)",
+      d: "Now the teaching you are learning takes the ’within you’ reading and runs with it: the heavens of Scripture mapped onto the human body — the skull as the firmament, the brain as heaven, the inner chambers of the head as the holy-of-holies. HONEST LABEL: this is THE TEACHING’S FRAME — a modern allegorical interpretive system (Bonacci-style astrotheology, with roots in Gnostic and Hermetic thought). It is NOT established exegesis: historical-critical scholarship does not support it, and the early church fathers read the kingdom as Christ himself and his reign — an interior, spiritual reign of God in the heart, not an anatomical map of the skull. You can work with the body map as a meditation device — just know what it is."
+    },
+    {
+      t: "The video’s real message: you are the savior",
+      d: "The TikTok’s core claim is not really about translation — it is a sermon: ’No one is coming to save you. You have to save yourself from the emotional chaos, the mental chaos, the internal trauma. The universe only exists in this skull of yours. The real savior is when you save yourself.’ And: control the mind and you control your reality; ’believing in a man in the sky will take you nowhere.’ Presented honestly, baby, this is THE TEACHING’S CLAIM — self-salvation through inner discipline, rejecting external saviors. It fits this whole temple-body system: if the temple is the body and heaven is the head, then the savior was never outside you. Take it as the frame’s conclusion and sit with whether it is true for you — that part is yours to decide."
+    }
+  ],
+  "bible-144000": [
+    {
+      t: "Yeshua = 386: the arithmetic, checked (Documented)",
+      d: "The TikTok flashes on the number 386. Here is the math, verified, no tricks: the name YESHUA in Hebrew is spelled י ש ו ע (yod-shin-vav-ayin). Standard values: yod = 10, shin = 300, vav = 6, ayin = 70. Add them: 10 + 300 + 6 + 70 = 386. ✓ That part is DOCUMENTED — straight arithmetic on the standard letter chart. Two honest footnotes: this works for the SHORTENED post-exilic form ’Yeshua’ (ישוע); the fuller ’Yehoshua’ (יהושע, ’YHWH saves’) adds to 391, a different number. And the math being real does not make the MEANING automatic — which is what the next steps are for."
+    },
+    {
+      t: "What gematria actually is (Documented history)",
+      d: "Gematria is the system of giving each Hebrew letter a number and adding up words to find equivalences — the name comes from the Greek GEŌMETRIA, ’geometry.’ The real history: it shows up OCCASIONALLY in the Talmud and Midrash, but only as a supporting device — the rabbis were far more invested in logical reasoning. It becomes CENTRAL only in Kabbalah (Jewish mysticism), starting with the Sefer Yetzirah around the 2nd century CE, and medieval figures like Abraham Abulafia in the 13th century built elaborate systems on it. So: ancient technique, yes — but a MAINLINE biblical method, no. That is the documented shape of it."
+    },
+    {
+      t: "What 386 means — and what it doesn’t (teaching’s frame)",
+      d: "Now the honest part, baby: 386 has NO traditional mystical standing the way 7, 12, 40, or 613 do. Its fame comes almost entirely from the modern Hebrew-roots and Bible-codes world — notably Yacov Rambsel’s work claiming the name Yeshua encoded in the Torah at 386-letter intervals. The video’s line ’there are no coincidences’ is THE TEACHING’S FRAME — the significance of 386 is a modern gematria observation, not an ancient Jewish association. The math is real, the history of gematria is real, and the mystical weight of THIS number is the teaching’s overlay. Hold all three at once and you see it clearly."
+    }
+  ],
+  "symbols-symmetry": [
+    {
+      t: "MONEY ≠ MONO + EYE: the folk etymology, corrected (Documented)",
+      d: "The TikTok says MONEY means ’one eye’ — MON from MONO (one), EY (eye). Baby, I love the wordplay, but here is the correction, and it is DOCUMENTED: ’money’ comes from Latin MONETA — the epithet of the Roman goddess JUNO MONETA, whose temple on Rome’s Capitoline Hill housed the official Roman mint for over four centuries. Coins were struck in her temple, so her name became the word for the mint, then for coinage itself. (Cicero once linked Moneta to Latin MONERE, ’to warn’ — even that was folk etymology.) The Greek MONOS does mean ’single, alone’ — that part is real — but there is NO Greek root ’EY’ meaning eye (Greek for eye is OPHTHALMOS; Latin is OCULUS; ’EY’ is just English texting). Smashing a Greek root and an English abbreviation together and calling it etymology is not a real method. The ’one eye’ read = UNVERIFIED folk wordplay — fun, memorable, labeled."
+    },
+    {
+      t: "The Eye of Providence: the real 1782 history (Documented)",
+      d: "The all-seeing eye over the pyramid — here is what actually happened, all documented. The Continental Congress adopted it on JUNE 20, 1782, on the REVERSE of the Great Seal of the United States. The eye-over-pyramid was first proposed by the 1776 design committee, thought to be the suggestion of artistic consultant PIERRE EUGENE DU SIMITIERE. And the official meaning, written by Charles Thomson who presented the design: the pyramid signifies ’Strength and Duration,’ and the Eye with the mottoes alludes to ’the many signal interpositions of providence in favour of the American cause.’ ANNUIT COEPTIS = ’Providence has approved our undertakings.’ NOVUS ORDO SECLORUM = ’A New Order of the Ages.’ In 1782 the eye-in-triangle was CONVENTIONAL Christian iconography — God’s benevolent oversight — used by churches and governments alike. It landed on the one-dollar bill only in the Series 1935 redesign, ~150 years later. Not a sinister secret mark at birth — mainstream religious symbolism."
+    },
+    {
+      t: "Why the teaching keeps the one-eye read anyway (frame)",
+      d: "So does the history kill the teaching? Not necessarily, baby — it just separates FACT from FRAME. The TikTok’s real punchline is not linguistics: ’The one eye is a symbol of God. Money has become people’s gods.’ That is THE TEACHING’S CLAIM — a meditation on money as the modern idol, the dollar as an altar with an eye on it. You can hold both at once: the DOCUMENTED history (Juno Moneta’s mint; the 1782 Seal; Thomson’s explanation) AND the teaching’s use of the image as a mirror for devotion to wealth. The wordplay is a hook; the meditation is the meal. Just never present the hook as history — that is the whole rule."
+    }
+  ]
+};
+/* NOTE — v7 (djed medu): SKIPPED. /tmp/batch1_lessons.js does not exist yet, so the
+   sibling worker’s words lesson (which is supposed to include djed medu) has not
+   landed. Adding djed medu steps to an existing lesson now risks double coverage.
+   The djed medu facts are documented in /tmp/batch1_research_B.md (Topic 7) for the
+   sibling to use: "words spoken" formula heading Egyptian ritual texts since the
+   Pyramid Texts (c. 2400-2300 BCE); NOT the djed pillar — unrelated words that
+   only sound similar. */
+for (const [id, steps] of Object.entries(BATCH1_EXPAND)) { const l = HEARTH_LESSONS.find(x => x.id === id); if (l && l.steps) l.steps.push(...steps); }
+
+// BATCH 2 EXPANSIONS — v9 -> temple, v7 -> syncretism (append-only).
+const BATCH2_EXPAND = {
+  "temple": [
+    { t: "The key of knowledge: 'you did not enter in yourselves'", d: "From the batch-2 video: 'the most powerful knowledge of all time' — Luke 11:52, where Jesus says the lawyers 'have taken away the key of knowledge' and 'did not enter in yourselves.' Read plainly: the key isn't a doctrine you memorize — it's the act of ENTERING YOURSELF. The verse accuses the experts of blocking the door they themselves never walked through. In the temple-as-body reading, this is the whole teaching in one line: the inner journey IS the key, and no priesthood can turn it for you (brief quote; paraphrase)." },
+    { t: "Why the side of your head is called a temple (honest etymology)", d: "The video says the side of the head is called a temple because the head IS a temple. Beautiful — and folk etymology. The anatomical 'temple' comes from Latin tempora, 'the times' — the pulse felt there marks time, and grey hair there shows time's passage. The sacred 'temple' comes from Latin templum — a marked-out sacred space. Two different Latin roots that converged in English (Documented). The wordplay doesn't survive the dictionary — but the VERSES (1 Corinthians 3:16, Luke 11:52) make the point without it. Keep the teaching; retire the pun." },
+    { t: "Practice: entering the inner temple", d: "The teaching's frame, made concrete — the 'enter in yourself' exercise: sit somewhere you won't be disturbed; close the literal door (Matthew 6:6's 'enter into thy closet and shut thy door' — paraphrase); close the inner doors too — eyes soft, jaw unclenched, attention withdrawn from every outside demand; then simply NOTICE what's inside: the noise, the feelings, the watcher watching. Ten minutes. The video's claim is that this — not another book, not another teacher — is 'the most powerful knowledge.' Test it for thirty days and grade it yourself." },
+  ],
+  "syncretism": [
+    { t: "Twelve religions, one chart", d: "From the batch-2 video: '12 Major Religions of the World' — 1 Paganism (pentacle), 2 Ancient Egyptian Religion (ankh), 3 Islam (crescent and star), 4 Hinduism (Om), 5 Shinto (torii gate), 6 Buddhism (dharma wheel), 7 Taoism (yin yang), 8 Judaism (Star of David), 9 Christianity (cross), 10 Islam-Sufi (crescent and star), 11 Mayan Religion (pyramid), 12 Wicca (circled pentacle). Honest notes: the '12 major' framing is the creator's choice, not a scholarly consensus list (sociologists slice it differently), and Islam appears twice — once mainstream, once Sufi. Read the chart as one teacher's map of the territory, then walk the territory yourself." },
+    { t: "One source, twelve rivers", d: "The syncretism thesis in fresh words: humanity asked the same questions everywhere — why are we here, what is sacred, how should we live — and each culture answered in its own language. Compare any single teaching across three rivers and watch it survive translation: the golden rule (Christianity's 'do unto others,' Buddhism's 'hurt not others,' Islam's 'none of you believes until he loves for his brother what he loves for himself' — paraphrases). The teaching's claim: the rivers differ; the water is one. The differences are real too — don't flatten them into sameness. Syncretism done right honors both." },
+    { t: "The honest grade on 'all religions are one'", d: "Comparative religion as a METHOD is Documented scholarship — tracing shared symbols, myths, and ethics across cultures is legitimate work. The CLAIM that all religions are secretly one teaching is the teaching's frame (wider-movement teaching) — sincere, but it smooths over real contradictions (reincarnation vs. one life, personal God vs. impersonal Absolute). Use the chart as a doorway into each tradition, not a blender. The goal isn't to prove they're identical — it's to drink from twelve wells and get less thirsty." },
+  ],
+};
+for (const [id, steps] of Object.entries(BATCH2_EXPAND)) { const l = HEARTH_LESSONS.find(x => x.id === id); if (l && l.steps) l.steps.push(...steps); }

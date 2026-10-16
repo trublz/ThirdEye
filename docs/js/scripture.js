@@ -644,3 +644,94 @@ chapters: [
 },
 ];
 for (const b of SCRIPTURE_B7) SCRIPTURE.push(b);
+/* Scripture reader batch 8: more decoded passages. KJV public domain. */
+const SCRIPTURE_B8 = [
+{
+id: "ruth1", name: "Ruth 1 — Whither Thou Goest", testament: "OT", order: 87,
+intro: "The Moabite widow's vow: loyalty as the path, and the outsider grafted in.",
+chapters: [
+{ n: 1, verses: [
+{ n: 16, t: "And Ruth said, Intreat me not to leave thee, or to return from following after thee: for whither thou goest, I will go; and where thou lodgest, I will lodge: thy people shall be my people, and thy God my God:", note: "Ruth — a MOABITE, an outsider twice over (foreigner, widow) — speaks the Bible's greatest vow of loyalty. 'Whither thou goest, I WILL GO' — no conditions, no contract: pure cleaving. The teaching's reading: this is the soul's vow to the path itself. And the scandal of the book: this foreigner becomes the great-grandmother of David — the outsider grafted into the very root of the kingdom. Nobody is outside the story." },
+],
+},
+],
+},
+{
+id: "samuel16", name: "1 Samuel 16 — The Anointing", testament: "OT", order: 88,
+intro: "David chosen last: the Lord looks on the heart, not the height.",
+chapters: [
+{ n: 16, verses: [
+{ n: 7, t: "But the LORD said unto Samuel, Look not on his countenance, or on the height of his stature; because I have refused him: for the LORD seeth not as man seeth; for man looketh on the outward appearance, but the LORD looketh on the heart.", note: "'Man looketh on the OUTWARD APPEARANCE, but the LORD looketh on the HEART' — the whole of divine selection in one line. Samuel keeps picking the tall, impressive sons; God keeps refusing them. The teaching's mirror: everything you judge by — looks, status, polish — is the outward appearance. The heart is the only organ God reads. Learn to read it too." },
+{ n: 13, t: "Then Samuel took the horn of oil, and anointed him in the midst of his brethren: and the Spirit of the LORD came upon David from that day forward.", note: "The HORN OF OIL — the anointing again (the christos, the oil): poured on the LAST-picked, youngest, smallest brother. 'The Spirit of the LORD came upon David FROM THAT DAY FORWARD' — the anointing isn't a moment, it's a commencement. The oil marks the beginning of the becoming, not its end." },
+],
+},
+],
+},
+{
+id: "kings19", name: "1 Kings 19 — The Still Small Voice", testament: "OT", order: 89,
+intro: "Elijah at the cave: not in the wind, earthquake, or fire — in the whisper.",
+chapters: [
+{ n: 19, verses: [
+{ n: 11, t: "And, behold, the LORD passed by, and a great and strong wind rent the mountains, and brake in pieces the rocks before the LORD; but the LORD was not in the wind: and after the wind an earthquake; but the LORD was not in the earthquake:", note: "'The LORD was NOT in the wind... NOT in the earthquake' — Elijah, fresh from calling down fire on Carmel, expects God in the spectacular. The text dismantles it piece by piece: not in the wind, not in the quake. The teaching's correction to every sensation-chaser: the divine is not in the fireworks. Keep reading." },
+{ n: 12, t: "And after the earthquake a fire; but the LORD was not in the fire: and after the fire a still small voice.", note: "'A STILL SMALL VOICE' — after wind, earthquake, and fire all fail: the whisper. The Hebrew suggests a thin silence, a sound of sheer stillness. This is the verse the entire contemplative tradition stands on next to 'be still and know': God is not in the noise — not even holy noise. The voice comes in the stillness AFTER the spectacle. Every practitioner who chases experiences needs this verse taped to the mirror." },
+],
+},
+],
+},
+{
+id: "psalm139", name: "Psalm 139 — Fearfully Made", testament: "OT", order: 90,
+intro: "The inescapable presence and the knit-together self: the most intimate psalm.",
+chapters: [
+{ n: 139, verses: [
+{ n: 7, t: "Whither shall I go from thy spirit? or whither shall I flee from thy presence?", note: "The question that answers itself: NOWHERE. 'Whither shall I flee from thy presence?' — heaven, hell, the wings of morning, the uttermost sea (vv. 8-9): every direction checked, presence found in all. The teaching's comfort and terror in one: you cannot get away — which means you were never abandoned either." },
+{ n: 14, t: "I will praise thee; for I am fearfully and wonderfully made: marvellous are thy works; and that my soul knoweth right well.", note: "'FEARFULLY and WONDERFULLY made' — fearfully: with awe, with trembling care. Your formation was not casual. 'Marvellous are thy works; and that my soul KNOWETH right well' — the soul KNOWS this, underneath the self-hatred and the comparison. The verse isn't telling you something new; it's reminding you of something your soul never forgot." },
+],
+},
+],
+},
+{
+id: "jeremiah29", name: "Jeremiah 29 — Plans", testament: "OT", order: 91,
+intro: "The exile letter: God's plans, and the seeking that finds.",
+chapters: [
+{ n: 29, verses: [
+{ n: 11, t: "For I know the thoughts that I think toward you, saith the LORD, thoughts of peace, and not of evil, to give you an expected end.", note: "Spoken to EXILES — people dragged to Babylon, the worst moment of the nation's life — and the word is 'thoughts of PEACE, and not of evil.' The teaching's anchor in dark seasons: the thoughts toward you, from the source, are peace — even when the circumstances are Babylon. 'An expected end' (a hope and a future): the story isn't over where you are." },
+{ n: 13, t: "And ye shall seek me, and find me, when ye shall search for me with all your heart.", note: "'When ye shall search for me WITH ALL YOUR HEART' — the condition is totality, not perfection: all the heart, not a flawless heart. Half-hearted seeking finds half-answers. The promise is absolute — 'ye SHALL... FIND me' — with the single condition of whole-heartedness. The teaching's whole method in one verse: bring all of it, find all of it." },
+],
+},
+],
+},
+{
+id: "micah6", name: "Micah 6 — What Is Required", testament: "OT", order: 92,
+intro: "The threefold requirement: the whole law of the prophets in one verse.",
+chapters: [
+{ n: 6, verses: [
+{ n: 8, t: "He hath shewed thee, O man, what is good; and what doth the LORD require of thee, but to do justly, and to love mercy, and to walk humbly with thy God?", note: "The entire prophetic law compressed to three verbs: DO JUSTLY (act rightly toward others), LOVE MERCY (carry compassion as affection, not duty), WALK HUMBLY with thy God (the walk — daily, lowly, accompanied). Not thousands of burnt offerings (v. 7) — three things. The teaching's plumb line: when in doubt, run the three. Justice, mercy, humility — everything else is commentary." },
+],
+},
+],
+},
+{
+id: "galatians5", name: "Galatians 5 — The Fruit", testament: "NT", order: 93,
+intro: "The works of the flesh vs. the fruit of the Spirit: the ninefold harvest.",
+chapters: [
+{ n: 5, verses: [
+{ n: 22, t: "But the fruit of the Spirit is love, joy, peace, longsuffering, gentleness, goodness, faith,", note: "'The FRUIT of the Spirit' — FRUIT, singular, though nine flavors follow: one fruit, nine tastes. And fruit is GROWN, not manufactured — the branch doesn't strain to produce it (John 15's vine again). Love, joy, peace... the list is the DIAGNOSTIC: whatever's growing in your life reveals which tree you're grafted into. Check the fruit, know the root." },
+{ n: 23, t: "Meekness, temperance: against such there is no law.", note: "'Against SUCH there is NO LAW' — no rule can condemn love, joy, peace: the law has no jurisdiction over the fruit. The teaching's freedom: the one bearing this fruit is already beyond the law's reach — not by breaking it, but by outgrowing its necessity. The law restrains the flesh; the fruit needs no restraint." },
+],
+},
+],
+},
+{
+id: "john11", name: "John 11 — Lazarus", testament: "NT", order: 94,
+intro: "The raising of Lazarus: the resurrection before the resurrection, and the shortest verse.",
+chapters: [
+{ n: 11, verses: [
+{ n: 25, t: "Jesus said unto her, I am the resurrection, and the life: he that believeth in me, though he were dead, yet shall he live:", note: "'I AM the resurrection' — not 'I bring' or 'I promise': I AM. Resurrection as IDENTITY, present tense, standing in front of her before Lazarus moves. 'Though he were DEAD, yet shall he LIVE' — death as a comma, not a period. The teaching's reading: the 'dead' parts of you — the buried dreams, the numb heart — hear this same voice." },
+{ n: 35, t: "Jesus wept.", note: "The shortest verse in the Bible — two words — and the most human. He KNOWS he's about to raise Lazarus; he weeps anyway. The teaching's treasure: divinity doesn't cancel grief, it ENTERS it. 'Jesus wept' is the whole permission slip for feeling: the awakened one still cries. Tears are not failure of faith — they're its fellowship." },
+{ n: 43, t: "And when he thus had spoken, he cried with a loud voice, Lazarus, come forth.", note: "'LAZARUS, COME FORTH' — the call is PERSONAL (by name) and OUTWARD (come forth — out of the tomb, out of the wrappings). The teaching's practice: the dead places don't revive by thinking about them — they revive at the CALL. Name the dead thing. Speak to it. Command it forth. Then (v. 44): 'Loose him, and let him go' — the community unwraps what the call awakens." },
+],
+},
+],
+},
+];
+for (const b of SCRIPTURE_B8) SCRIPTURE.push(b);

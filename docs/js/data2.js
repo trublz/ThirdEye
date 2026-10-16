@@ -2511,3 +2511,21 @@ steps: [
 },
 ];
 for (const l of N144_LESSON) HEARTH_LESSONS.push(l);
+/* Numerology rhymes lesson — the 144,000's echoes, with honest labels. */
+const N144_RHYMES = [
+{
+id: "bible-144000-rhymes", title: "144,000: The Rhymes (Read Honestly)", icon: "🔍", free: true,
+intro: "The other factorizations of 144,000 — the 72, the 144, the 300 — and the honest labels on each. Rhyme is not proof, and this lesson shows you the difference.",
+steps: [
+{ t: "What a 'rhyme' is in numbers", d: "A RHYME in numerology: two numbers that echo each other — same digits, clean division, shared factors. Rhymes are REAL (the math checks out) and SUGGESTIVE (patterns catch the eye for a reason). But a rhyme is not PROOF. This lesson's rule, stated upfront: every rhyme below gets its label — scriptural, traditional, or milieu — and you decide what weight it carries." },
+{ t: "72 × 2,000: the nations rhyme (SCRIPTURAL/TRADITIONAL)", d: "72 is the Bible's number of the peoples: Genesis 10's Table of Nations (70–72 peoples), Luke 10's 72 disciples sent out, the Kabbalistic 72 names of God. 72 × 2,000 = 144,000. Label: the 72-nations count is SCRIPTURAL; the 72-names is TRADITIONAL (Kabbalah). The factorization is clean math. Reading: the whole world of nations, doubled into fullness — the sealed drawn from everywhere, matching Revelation 7:9's 'all nations.'" },
+{ t: "144 × 1,000: the blueprint rhyme (SCRIPTURAL)", d: "144 — 'the measure of a man' (Revelation 21:17) — × 1,000 (divine multitude). Label: SCRIPTURAL on both factors. Reading: the individual blueprint scaled to the multitude. One finished human, times all of them. This one needs no outside source — the book gives you both numbers itself." },
+{ t: "300 × 480: the rulers rhyme (MILIEU — handle with care)", d: "144,000 ÷ 300 = 480, exactly. No remainder. The 300 is the 'Committee of 300' — the top-table headcount from John Coleman's conspiracy book, the most-cited number in the milieu for the ruling circle. Label: MILIEU. There is NO verified roster of any such committee — the historical Bavarian Illuminati was raided and shut down in the 1780s (DOCUMENTED), and every modern headcount is a claim, not a census." },
+{ t: "480 = 12 × 40: unpacking the rhyme", d: "IF you take the milieu's 300, the co-factor is 480 = 12 × 40. Twelve: divine government, the complete set (SCRIPTURAL). Forty: the Bible's number of testing and trial — 40 days of flood, 40 years in the wilderness, 40 days of temptation (SCRIPTURAL). So the rhyme reads: the 300 'rulers,' times government-through-trial, equals the sealed multitude. The small circle, contained inside the complete number. Poetic — and that's all it claims to be." },
+{ t: "Why 13 and 33 DON'T rhyme (and why that matters)", d: "The milieu's other pet numbers fail the math: 144,000 ÷ 13 = 11,076.9 (messy). 144,000 ÷ 33 = 4,363.6 (messy). The '13 bloodline families' and the '33rd degree' — both common in the literature — do NOT divide cleanly into 144,000. Honest numerology reports the misses too. A method that only shows hits is astrology-column thinking; the misses are data." },
+{ t: "Rhyme is not proof: the label test", d: "Here's the discipline: when a number rhyme excites you, ask three questions. (1) Are the FACTORS from a verified source? (Scripture: yes. A conspiracy book's headcount: no.) (2) Does the rhyme PREDICT anything, or only decorate? (3) Would I believe the rhyme if it pointed the OTHER way? If the 300 divided messily and the 13 divided cleanly, would you switch theories — or switch which rhyme you mention? The honest mind answers before the excited mind." },
+{ t: "What the rhymes are FOR", d: "Use them the way the 144,000 lesson uses the master equation: as MEDITATION, not evidence. The 72-nations rhyme widens your heart to everybody. The 144-blueprint rhyme reminds you the measure is a finished human. The 300-rhyme — labeled honestly — reminds you that every small circle of power is contained inside a larger completeness. Numbers as mirrors, not as court exhibits. That's the teaching's whole method with numbers: they show you yourself." },
+],
+},
+];
+for (const l of N144_RHYMES) HEARTH_LESSONS.push(l);

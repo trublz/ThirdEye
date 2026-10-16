@@ -424,7 +424,20 @@ function scriptureNotes() {
     "ruth1": "ruth", "samuel16": "samuel1", "kings19": "kings1", "psalm139": "psalms",
     "jeremiah29": "jeremiah", "micah6": "micah", "galatians5": "galatians", "john11": "john",
     "psalm27": "psalms", "isaiah9": "isaiah", "job38": "job", "luke15": "luke",
-    "romans12": "romans", "colossians3": "colossians", "hebrews12": "hebrews", "peter5": "peter1" };
+    "romans12": "romans", "colossians3": "colossians", "hebrews12": "hebrews", "peter5": "peter1",
+    "leviticus19": "leviticus", "numbers6": "numbers", "deuteronomy6": "deuteronomy", "joshua1": "joshua",
+    "judges6": "judges", "samuel2-7": "samuel2", "kings2-2": "kings2", "chronicles1-29": "chronicles1",
+    "chronicles2-7": "chronicles2", "ezra3": "ezra", "nehemiah8": "nehemiah", "esther4": "esther",
+    "lamentations3": "lamentations", "hosea6": "hosea", "joel2": "joel", "amos5": "amos",
+    "obadiah1": "obadiah", "nahum1": "nahum", "habakkuk2": "habakkuk", "zephaniah3": "zephaniah",
+    "haggai2": "haggai", "malachi3": "malachi", "wisdom7": "wisdom", "sirach2": "sirach",
+    "tobit12": "tobit", "judith13": "judith", "esther14": "esther-add", "baruch3": "baruch",
+    "letterjer": "letter-jeremiah", "susanna": "susanna", "beldragon": "bel-dragon",
+    "maccabees1-2": "maccabees1", "maccabees2-7": "maccabees2", "manasses": "prayer-manasses",
+    "esdras1-4": "esdras1", "esdras2-2": "esdras2",
+    "corinthians2-4": "corinthians2", "thessalonians1-4": "thessalonians1", "thessalonians2-2": "thessalonians2",
+    "timothy1-4": "timothy1", "timothy2-1": "timothy2", "titus2": "titus", "philemon": "philemon",
+    "peter2-1": "peter2", "e1john1": "john1", "e2john": "john2", "e3john": "john3", "jude": "jude" };
   if (typeof SCRIPTURE !== "undefined") SCRIPTURE.forEach(b => {
     const target = map[b.id];
     if (!target) return;

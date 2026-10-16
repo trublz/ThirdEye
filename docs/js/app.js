@@ -417,7 +417,9 @@ function scriptureNotes() {
     "matthew5": "matthew", "matthew7": "matthew", "isaiah6": "isaiah", "daniel7": "daniel",
     "genesis4": "genesis", "psalm46": "psalms", "isaiah40": "isaiah", "matthew25": "matthew",
     "john10": "john", "acts2": "acts", "hebrews11": "hebrews", "revelation3": "revelation",
-    "revelation7": "revelation", "revelation14": "revelation" };
+    "revelation7": "revelation", "revelation14": "revelation",
+    "proverbs3": "proverbs", "ecclesiastes3": "ecclesiastes", "song2": "song", "isaiah53": "isaiah",
+    "mark8": "mark", "ephesians6": "ephesians", "philippians4": "philippians", "james1": "james" };
   if (typeof SCRIPTURE !== "undefined") SCRIPTURE.forEach(b => {
     const target = map[b.id];
     if (!target) return;

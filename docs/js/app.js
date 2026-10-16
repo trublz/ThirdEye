@@ -314,6 +314,7 @@ function vLabels() {
 function vLabel(id) {
   const d = DISORDERS.find(x => x.id === id) || DISORDERS[0];
   const lens = [["🏥 Psychiatry says", d.clinical], ["🕊️ The spiritual reframe", d.spiritual], ["👁️ The pineal connection", d.pineal], ["⚡ The awakening link", d.awakening]];
+  if (d.early) lens.push(["🔮 Seeing it before it happens — early warning signs", d.early]);
   return `<p class="sub"><a href="#/labels" style="color:var(--gold)">← The Labels</a></p>
     <h2>${d.icon} ${d.name}</h2>` +
     lens.map(l => `<div class="card"><h3>${l[0]}</h3><p class="sub">${l[1]}</p></div>`).join("") +
@@ -421,7 +422,9 @@ function scriptureNotes() {
     "proverbs3": "proverbs", "ecclesiastes3": "ecclesiastes", "song2": "song", "isaiah53": "isaiah",
     "mark8": "mark", "ephesians6": "ephesians", "philippians4": "philippians", "james1": "james",
     "ruth1": "ruth", "samuel16": "samuel1", "kings19": "kings1", "psalm139": "psalms",
-    "jeremiah29": "jeremiah", "micah6": "micah", "galatians5": "galatians", "john11": "john" };
+    "jeremiah29": "jeremiah", "micah6": "micah", "galatians5": "galatians", "john11": "john",
+    "psalm27": "psalms", "isaiah9": "isaiah", "job38": "job", "luke15": "luke",
+    "romans12": "romans", "colossians3": "colossians", "hebrews12": "hebrews", "peter5": "peter1" };
   if (typeof SCRIPTURE !== "undefined") SCRIPTURE.forEach(b => {
     const target = map[b.id];
     if (!target) return;

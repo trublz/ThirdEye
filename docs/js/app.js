@@ -18,6 +18,7 @@ function toneHz(hz, label) {
   gainNode.gain.exponentialRampToValueAtTime(0.375, actx.currentTime + 1.5);
   currentHz = hz; currentLabel = label || (hz + " Hz");
   renderToneState();
+  try { store.set("tones_played", (store.get("tones_played", 0) || 0) + 1); } catch (e) {}
 }
 function toneBinaural(base, diff, label) {
   stopTone();
@@ -81,6 +82,7 @@ const TILES = [
   { h: "#/sos", icon: "🆘", t: "Grounding SOS", d: "When it's too much — use this NOW" },
   { h: "#/journal", icon: "📓", t: "Journal", d: "Log signs, dreams & synchronicities" },
   { h: "#/practice", icon: "🔥", t: "Daily Practice", d: "Streaks & non-negotiable habits" },
+  { h: "#/journey", icon: "🏆", t: "The Journey", d: "Badges, progress & your awakening checklist" },
 ];
 
 function vHome() {
@@ -128,6 +130,8 @@ function vChakras() {
 
 function vChakra(id) {
   const c = CHAKRAS.find(x => x.id === id) || CHAKRAS[0];
+  const vc = store.get("visited_chakras", []);
+  if (!vc.includes(c.id)) { vc.push(c.id); store.set("visited_chakras", vc); }
   return `<h2><span class="chakra-dot" style="background:${c.color};color:${c.color}"></span>${c.name}</h2>
   <p class="sub">${c.sanskrit} · ${c.location} · ${c.element} · Finger: ${c.finger} · Tone: ${c.freq}</p>
   <div class="card" style="border-color:${c.color}"><p>${c.theme}</p></div>
@@ -184,7 +188,10 @@ function vMudra(id) {
     ${typeof PHOTOS !== "undefined" && PHOTOS[id] ? `<div class="card" style="padding:10px"><img src="${PHOTOS[id]}" alt="${l.title} hand position photo" style="width:100%;border-radius:12px;display:block"><p class="sub" style="text-align:center;margin:10px 0 2px">👆 Hold your hand up and match this position exactly.</p></div>` : ""}` +
     l.steps.map(s => s.d ? `<div class="card"><h3>${s.t}</h3><p class="sub">${s.d}</p></div>`
       : `<h3 style="color:var(--gold);margin:22px 0 4px">${s.t}</h3>`).join("") +
-    `<div class="card"><p class="sub">📓 <i>Practice it now \u2014 then write in your <a href="#/journal" style="color:var(--gold)">awakening journal</a> what you felt. Teaching it back is how it becomes yours.</i></p></div>`;
+    `<div class="card"><p class="sub">📓 <i>Practice it now \u2014 then write in your <a href="#/journal" style="color:var(--gold)">awakening journal</a> what you felt. Teaching it back is how it becomes yours.</i></p></div>
+    <div class="card" style="text-align:center">${isDone(l.id)
+      ? `<p style="color:var(--gold)">✅ Completed — counts toward your <a href="#/journey" style="color:var(--gold)">Journey badges</a>.</p>`
+      : `<button class="btn btn-gold btn-block" onclick="markLessonDone('${l.id}')">✓ Mark mudra complete</button>`}</div>`;
 }
 
 function vPoints() {
@@ -208,7 +215,11 @@ function vPointLesson(id) {
     ${l.diagram && !l.photo && typeof DIAGRAMS !== "undefined" && DIAGRAMS[l.diagram] ? `<div class="card">${DIAGRAMS[l.diagram]}</div>` : ""}` +
     l.steps.map(s => s.d ? `<div class="card"><h3>${s.t}</h3><p class="sub">${s.d}</p></div>`
       : `<h3 style="color:var(--gold);margin:22px 0 4px">${s.t}</h3>`).join("") +
-    `<div class="card"><p class="sub">📓 <i>Write in your <a href="#/journal" style="color:var(--gold)">awakening journal</a> what clicked for you. Teaching it back is how it becomes yours.</i></p></div>`;
+    `<div class="card"><p class="sub">📓 <i>Write in your <a href="#/journal" style="color:var(--gold)">awakening journal</a> what clicked for you. Teaching it back is how it becomes yours.</i></p></div>
+    <div class="card" style="text-align:center">${isDone(l.id)
+      ? `<p style="color:var(--gold)">✅ Completed — nice work. This counts toward your <a href="#/journey" style="color:var(--gold)">Journey badges</a>.</p>`
+      : `<button class="btn btn-gold btn-block" onclick="markLessonDone('${l.id}')">✓ Mark lesson complete</button>
+         <p class="sub">Check it off — it feeds your progress bar and badges in <a href="#/journey" style="color:var(--gold)">The Journey</a>.</p>`}</div>`;
 }
 
 function vAstral() {
@@ -216,7 +227,10 @@ function vAstral() {
     ASTRAL_TECHS.map(a => `<div class="card"><h3>${a.name}</h3>
       <p class="sub">By ${a.by} · <b style="color:var(--gold)">${a.level}</b></p>
       <ol class="steps">${a.steps.map(s => `<li>${s}</li>`).join("")}</ol></div>`).join("") +
-    `<div class="warn"><b>🛡️ Safety:</b> Set a clear intention before every attempt. If fear spikes, press your feet together / wiggle toes to return. After any attempt, ground: cold water, food, bare feet on earth.</div>`;
+    `<div class="warn"><b>🛡️ Safety:</b> Set a clear intention before every attempt. If fear spikes, press your feet together / wiggle toes to return. After any attempt, ground: cold water, food, bare feet on earth.</div>
+    <div class="card" style="text-align:center">${isDone("astral-section")
+      ? `<p style="color:var(--gold)">✅ Section completed — counts toward your <a href="#/journey" style="color:var(--gold)">Journey badges</a>.</p>`
+      : `<button class="btn btn-gold btn-block" onclick="markLessonDone('astral-section')">✓ Mark section complete</button>`}</div>`;
 }
 
 function vPineal() {
@@ -246,7 +260,11 @@ function vHearthLesson(id) {
     ${l.diagram && !l.photo && typeof DIAGRAMS !== "undefined" && DIAGRAMS[l.diagram] ? `<div class="card">${DIAGRAMS[l.diagram]}</div>` : ""}` +
     l.steps.map(s => s.d ? `<div class="card"><h3>${s.t}</h3><p class="sub">${s.d}</p></div>`
       : `<h3 style="color:var(--gold);margin:22px 0 4px">${s.t}</h3>`).join("") +
-    `<div class="card"><p class="sub">📓 <i>Write in your <a href="#/journal" style="color:var(--gold)">awakening journal</a> what clicked for you. Teaching it back is how it becomes yours.</i></p></div>`;
+    `<div class="card"><p class="sub">📓 <i>Write in your <a href="#/journal" style="color:var(--gold)">awakening journal</a> what clicked for you. Teaching it back is how it becomes yours.</i></p></div>
+    <div class="card" style="text-align:center">${isDone(l.id)
+      ? `<p style="color:var(--gold)">✅ Completed — nice work. This counts toward your <a href="#/journey" style="color:var(--gold)">Journey badges</a>.</p>`
+      : `<button class="btn btn-gold btn-block" onclick="markLessonDone('${l.id}')">✓ Mark lesson complete</button>
+         <p class="sub">Check it off — it feeds your progress bar and badges in <a href="#/journey" style="color:var(--gold)">The Journey</a>.</p>`}</div>`;
 }
 
 function vShilajit() {
@@ -324,6 +342,7 @@ function vLabel(id) {
 }
 
 function vSos() {
+  trackVisit("sos");
   return `<h2>🆘 Grounding SOS</h2><p class="sub">Too much, too fast? Do this now, in order. You are safe. This passes.</p>` +
     SOS_STEPS.map((s, i) => `<div class="card"><h3>${i + 1}. ${s.t}</h3><p class="sub">${s.d}</p></div>`).join("") +
     `<div class="warn"><b>If it stays dark:</b> talk to someone you trust, or a professional. Spiritual crisis is real and help is strength — the national crisis line in the US is 988, in Canada 1-833-456-4566.</div>`;
@@ -393,6 +412,11 @@ function vScriptureChapter(bookId, chN) {
   const b = scriptureBooks().find(x => x.id === bookId);
   const c = b && b.chapters.find(x => x.n === Number(chN));
   if (!c) return `<h2>Not found</h2>`;
+  try {
+    const key = bookId + ":" + chN;
+    const read = store.get("chapters_read_list", []);
+    if (!read.includes(key)) { read.push(key); store.set("chapters_read_list", read); store.set("chapters_read", read.length); }
+  } catch (e) {}
   const notes = scriptureNotes();
   const verses = c.verses.map(v => {
     const note = (notes[bookId] && notes[bookId][c.n] && notes[bookId][c.n][v.n]) || v.note;
@@ -535,6 +559,7 @@ const routes = [
   [/^#\/sos$/, vSos],
   [/^#\/journal$/, vJournal],
   [/^#\/practice$/, vPractice],
+  [/^#\/journey$/, vJourney],
 ];
 function render() {
   stopTone();
@@ -549,3 +574,90 @@ function render() {
   $("#mainNav").classList.remove("open");
 }
 window.addEventListener("hashchange", render);
+
+/* ---------- The Journey: badges, checklists, rewards ---------- */
+const BADGES = [
+  { id: "first-step", icon: "🌱", name: "The Awakening Begins", d: "Completed 'Start Here: The Absolute Basics'.", test: () => isDone("start-here") },
+  { id: "grounded", icon: "🦶", name: "Feet on the Earth", d: "Completed 'Grounding: What's ACTUALLY Happening'.", test: () => isDone("grounding-deep") },
+  { id: "sos-ready", icon: "🆘", name: "Emergency Trained", d: "Opened Grounding SOS — you know where to go when it's too much.", test: () => (store.get("visited", []).includes("sos")) },
+  { id: "third-eye", icon: "👁️", name: "Third Eye Opening", d: "Completed the full Pineal Gland guide.", test: () => isDone("pineal-deep") },
+  { id: "tuner", icon: "🔊", name: "Frequency Tuner", d: "Played a tone in the Frequency Lab.", test: () => store.get("tones_played", 0) > 0 },
+  { id: "chakra-walker", icon: "🌈", name: "Chakra Walker", d: "Visited all 7 chakras.", test: () => (store.get("visited_chakras", []).length >= 7) },
+  { id: "mudra-adept", icon: "🤲", name: "Mudra Adept", d: "Completed all 10 mudras.", test: () => MUDRA_LIB.filter(m => isDone(m.id)).length >= 10 },
+  { id: "point-healer", icon: "📍", name: "Point Healer", d: "Completed all 12 pressure points.", test: () => PRESSURE_LESSONS.filter(p => isDone(p.id)).length >= 12 },
+  { id: "astral-traveler", icon: "🌌", name: "Astral Traveler", d: "Completed the Astral Projection section.", test: () => isDone("astral-section") },
+  { id: "tesla-scholar", icon: "⚡", name: "Tesla Scholar", d: "Completed every Tesla lesson.", test: () => ["tesla-life","tesla-research","tesla-369","tesla-generators","tesla-practice","tesla-workshop","living-369"].every(isDone) },
+  { id: "alchemist", icon: "🥗", name: "Body Alchemist", d: "Completed the Diet & Sebi lessons.", test: () => ["diet-proper","sebi-foods","sebi-herbs","sebi-sourcing","sebi-food-guide"].every(isDone) },
+  { id: "serpent", icon: "🐍", name: "Serpent Risen", d: "Completed every Kundalini lesson.", test: () => ["kundalini","kundalini-origins","kundalini-map","kundalini-signs","kundalini-syndrome","kundalini-activate","kundalini-christos"].every(isDone) },
+  { id: "manifestor", icon: "🧲", name: "Conscious Manifestor", d: "Completed every Manifestation lesson.", test: () => ["manifestation","manifest-how","manifest-pineal","manifest-frequency","manifest-blocks"].every(isDone) },
+  { id: "old-world", icon: "🏛️", name: "Old World Explorer", d: "Completed 'How It All Ties Together'.", test: () => isDone("old-world-ties") },
+  { id: "moon-scholar", icon: "🌙", name: "Moon Scholar", d: "Completed all three Vault of Wisdom lessons.", test: () => ["moon-calendar","sky-clock","calendar-deception"].every(isDone) },
+  { id: "indigo-seer", icon: "👽", name: "Indigo Seer", d: "Completed the Indigo & Starseed lesson.", test: () => isDone("indigo-starseed") },
+  { id: "scripture-scholar", icon: "📖", name: "Scripture Scholar", d: "Read 10 decoded scripture chapters.", test: () => store.get("chapters_read", 0) >= 10 },
+  { id: "journal-keeper", icon: "📓", name: "Journal Keeper", d: "Wrote 7 journal entries.", test: () => store.get("journal", []).length >= 7 },
+  { id: "seeker", icon: "🔍", name: "Seeker", d: "Completed 10 lessons.", test: () => store.get("done", []).length >= 10 },
+  { id: "student", icon: "📚", name: "Dedicated Student", d: "Completed 25 lessons.", test: () => store.get("done", []).length >= 25 },
+  { id: "scholar", icon: "🎓", name: "Hearth Scholar", d: "Completed 50 Hearth lessons.", test: () => store.get("done", []).length >= 50 },
+  { id: "week-keeper", icon: "🔥", name: "Week Keeper", d: "7-day practice streak.", test: () => dayStreak() >= 7 },
+  { id: "month-keeper", icon: "🔥", name: "Month Keeper", d: "30-day practice streak.", test: () => dayStreak() >= 30 },
+  { id: "master", icon: "👑", name: "Hearth Master", d: "Completed every Hearth lesson. The whole book.", test: () => HEARTH_LESSONS.every(l => isDone(l.id)) },
+];
+function isDone(id) { return store.get("done", []).includes(id); }
+function dayStreak() {
+  const days = store.get("streak", []); let s = 0; const d = new Date();
+  while (days.includes(d.toISOString().slice(0, 10))) { s++; d.setDate(d.getDate() - 1); }
+  return s;
+}
+function markLessonDone(id) {
+  const done = store.get("done", []);
+  if (!done.includes(id)) { done.push(id); store.set("done", done); }
+  const fresh = checkBadges();
+  if (fresh.length) { store.set("fresh_badges", fresh); }
+  render();
+}
+function checkBadges() {
+  const earned = store.get("badges", []);
+  const fresh = [];
+  for (const b of BADGES) {
+    if (!earned.includes(b.id)) {
+      try { if (b.test()) { earned.push(b.id); fresh.push(b.id); } } catch (e) {}
+    }
+  }
+  if (fresh.length) store.set("badges", earned);
+  return fresh;
+}
+function trackVisit(key) {
+  const v = store.get("visited", []);
+  if (!v.includes(key)) { v.push(key); store.set("visited", v); }
+  checkBadges();
+}
+function vJourney() {
+  checkBadges();
+  const earned = store.get("badges", []);
+  const fresh = store.get("fresh_badges", []);
+  if (fresh.length) store.set("fresh_badges", []);
+  const doneCount = store.get("done", []).length;
+  const total = HEARTH_LESSONS.length;
+  const pct = Math.round(doneCount / total * 100);
+  const newBadges = BADGES.filter(b => fresh.includes(b.id));
+  return `<h2>🏆 The Journey</h2>
+  <p class="sub">Your awakening, tracked. Complete lessons, keep your streak, earn badges. This is your proof of how far you've come.</p>
+  ${newBadges.length ? `<div class="card gold" style="text-align:center"><h3>🎉 New badge${newBadges.length > 1 ? "s" : ""} earned!</h3>` +
+    newBadges.map(b => `<p style="font-size:20px">${b.icon} <b>${b.name}</b><br><span class="sub">${b.d}</span></p>`).join("") + `</div>` : ""}
+  <div class="card"><h3>📖 Lessons completed</h3>
+    <p><b>${doneCount}</b> of ${total} (${pct}%)</p>
+    <div style="background:#2a1a4a;border-radius:10px;height:14px;overflow:hidden"><div style="width:${pct}%;height:100%;background:linear-gradient(90deg,#c084fc,#f0c75e)"></div></div></div>
+  <div class="card"><h3>🔥 Practice streak</h3><p><b>${dayStreak()}</b> days · <a href="#/practice" style="color:var(--gold)">check in today →</a></p></div>
+  <h3 style="color:var(--gold);margin:18px 0 8px">Badges — ${earned.length} of ${BADGES.length}</h3>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">` +
+  BADGES.map(b => {
+    const has = earned.includes(b.id);
+    return `<div class="card" style="${has ? "border-color:var(--gold);text-align:center" : "opacity:.45;text-align:center"}">
+      <div style="font-size:34px;${has ? "" : "filter:grayscale(1)"}">${b.icon}</div>
+      <p style="margin:6px 0 2px"><b>${b.name}</b></p>
+      <p class="sub" style="font-size:12px;margin:0">${has ? b.d : "🔒 " + b.d}</p></div>`;
+  }).join("") + `</div>
+  <div class="card"><h3>✅ The daily checklist</h3><p class="sub">The non-negotiables. Do one a day, check in, keep the streak.</p>
+  <ul class="clean"><li>🧘 10 min silent sitting</li><li>🔊 One frequency session</li><li>🚶 Barefoot grounding 10 min</li><li>📓 Journal one page</li><li>🌬️ 5 rounds box breathing</li></ul>
+  <a href="#/practice" style="color:var(--gold)">Check in today's practice →</a></div>`;
+}

@@ -544,3 +544,103 @@ chapters: [
 },
 ];
 for (const b of SCRIPTURE_B6) SCRIPTURE.push(b);
+/* Scripture reader batch 7: more decoded passages. KJV public domain. */
+const SCRIPTURE_B7 = [
+{
+id: "proverbs3", name: "Proverbs 3 — Trust", testament: "OT", order: 79,
+intro: "The wisdom chapter: trust, the straight paths, and the tree of life.",
+chapters: [
+{ n: 3, verses: [
+{ n: 5, t: "Trust in the LORD with all thine heart; and lean not unto thine own understanding.", note: "The most quoted wisdom verse in the canon — and the most misunderstood. 'Lean NOT unto thine own understanding' isn't anti-thought; it's anti-EGO-thought: the grasping, scheming, anxious mind. Trust with ALL thine heart — the heart (lev) meaning the whole inner person. The teaching's reading: stop outsourcing your knowing to the noise upstairs; drop it into the deeper knowing." },
+{ n: 6, t: "In all thy ways acknowledge him, and he shall direct thy paths.", note: "'IN ALL THY WAYS acknowledge him' — not in the holy ways, the Sunday ways: ALL of them. The grocery run, the argument, the work shift. 'He shall DIRECT thy paths' — direction comes to the acknowledged life. The straight path isn't found; it's GIVEN to the one who acknowledges the Giver in every step." },
+{ n: 18, t: "She is a tree of life to them that lay hold upon her: and happy is every one that retaineth her.", note: "'SHE' is Wisdom — and she is 'a TREE OF LIFE': the same tree from Eden's midst (Genesis 2:9), now identified with wisdom itself. Lay hold on wisdom and you're eating from the tree of life. The fall isn't reversed by going back to Eden — it's reversed by getting wise." },
+],
+},
+],
+},
+{
+id: "ecclesiastes3", name: "Ecclesiastes 3 — A Time", testament: "OT", order: 80,
+intro: "The times poem: everything has its season, and eternity in the heart.",
+chapters: [
+{ n: 3, verses: [
+{ n: 1, t: "To every thing there is a season, and a time to every purpose under the heaven:", note: "The great leveling verse: EVERYTHING has its season — grief and joy, building and breaking, silence and speech. The teaching's use: stop demanding it be harvest time during planting season. Your life has seasons; fighting the current one is the whole of suffering." },
+{ n: 11, t: "He hath made every thing beautiful in his time: also he hath set the world in their heart, so that no man can find out the work that God maketh from the beginning to the end.", note: "'He hath SET THE WORLD [eternity] IN THEIR HEART' — eternity planted inside the human chest: the reason nothing in time ever fully satisfies. You contain something bigger than every season — which is why you can watch the seasons turn without being turned by them. 'No man can find out the work from beginning to end': the frame is bigger than the mind. Rest in that." },
+],
+},
+],
+},
+{
+id: "song2", name: "Song of Songs 2 — The Beloved", testament: "OT", order: 81,
+intro: "The love poem as the soul's romance with the divine: the voice, the winter past, the little foxes.",
+chapters: [
+{ n: 2, verses: [
+{ n: 8, t: "The voice of my beloved! behold, he cometh leaping upon the mountains, skipping upon the hills.", note: "'THE VOICE of my beloved!' — recognition before sight: she KNOWS the voice (John 10:4's sheep know the shepherd's voice). 'Leaping upon the mountains' — the beloved doesn't walk, he LEAPS: the divine comes to the soul with joy, not duty. The mountains and hills are the obstacles — and he skips over them." },
+{ n: 11, t: "For, lo, the winter is past, the rain is over and gone;", note: "'The WINTER IS PAST' — the dark season ends: the soul's winter (the dark night, the dry years) is not permanent. 'The rain is over and gone' — even the necessary rains stop. Every winter in the spiritual life has this verse hidden inside it: past, over, gone." },
+{ n: 15, t: "Take us the foxes, the little foxes, that spoil the vines: for our vines have tender grapes.", note: "'THE LITTLE FOXES that spoil the vines' — not the wolves, the FOXES: the small things. Little compromises, little distractions, little resentments — they spoil the TENDER grapes (the young, vulnerable growth). The teaching's warning: guard the new growth from small teeth. Great falls start as little foxes." },
+],
+},
+],
+},
+{
+id: "isaiah53", name: "Isaiah 53 — The Suffering Servant", testament: "OT", order: 82,
+intro: "The servant chapter: wounded for transgressions, and the inner reading of redemptive suffering.",
+chapters: [
+{ n: 53, verses: [
+{ n: 3, t: "He is despised and rejected of men; a man of sorrows, and acquainted with grief: and we hid as it were our faces from him; he was despised, and we esteemed him not.", note: "'A MAN OF SORROWS, and acquainted with grief' — the servant KNOWS grief the way you know a friend: intimately, by name. 'We hid our faces from him' — the world looks AWAY from suffering, then and now. The inner reading: the rejected, sorrowful part of YOURSELF — the part you hide your face from — is the servant. Stop looking away." },
+{ n: 5, t: "But he was wounded for our transgressions, he was bruised for our iniquities: the chastisement of our peace was upon him; and with his stripes we are healed.", note: "'WOUNDED for our transgressions' — the servant absorbs what others did: the pattern of redemptive suffering. Inner reading: the conscious self takes the wounds of the unconscious patterns — you feel the pain your old habits earned, and by feeling it consciously, the pattern HEALS. 'With his stripes WE are healed' — the wound, borne awake, becomes medicine." },
+],
+},
+],
+},
+{
+id: "mark8", name: "Mark 8 — The Cross", testament: "NT", order: 83,
+intro: "Peter's confession, the rebuke, and the cost of following: deny yourself, take up the cross.",
+chapters: [
+{ n: 8, verses: [
+{ n: 33, t: "But when he had turned about and looked on his disciples, he rebuked Peter, saying, Get thee behind me, Satan: for thou savourest not the things that be of God, but the things that be of men.", note: "'GET THEE BEHIND ME, SATAN' — said to PETER, the rock, moments after his great confession. The same mouth that spoke revelation now speaks resistance. The teaching's shock: the adversary isn't out there — it's the beloved disciple's FEAR talking. Satan (the adversary) is whoever — even Peter, even you — argues against the necessary suffering." },
+{ n: 34, t: "Whosoever will come after me, let him deny himself, and take up his cross, and follow me.", note: "'DENY HIMSELF' — not deny pleasures, deny the SELF: the ego's claim to run the show. 'Take up HIS cross' — your cross, not someone else's: the particular burden appointed to you. The teaching's reading: the cross is the intersection — vertical (heaven) crossing horizontal (earth) — where you are. Pick up your own intersection and walk." },
+{ n: 35, t: "For whosoever will save his life shall lose it; but whosoever shall lose his life for my sake and the gospel's, the same shall save it.", note: "The great reversal: GRASPING life loses it, RELEASING life saves it. 'Save' (sozo) means heal, rescue, make whole. Clutch your life and it leaks through your fingers; pour it out and it returns full. The teaching's economy: everything you clutch, you lose; everything you release in love, you keep." },
+],
+},
+],
+},
+{
+id: "ephesians6", name: "Ephesians 6 — The Armor", testament: "NT", order: 84,
+intro: "The armor of God: the spiritual wardrobe, piece by piece, and what each piece actually is.",
+chapters: [
+{ n: 6, verses: [
+{ n: 12, t: "For we wrestle not against flesh and blood, but against principalities, against powers, against the rulers of the darkness of this world, against spiritual wickedness in high places.", note: "'We wrestle NOT AGAINST FLESH AND BLOOD' — the opponent is never the person: the annoying coworker, the enemy, even yourself — flesh and blood are never the real fight. 'Principalities, powers, rulers of darkness' — the patterns, systems, and inner forces BEHIND the people. Fight the pattern, love the person. Get this backwards and you spend your life punching shadows." },
+{ n: 14, t: "Stand therefore, having your loins girt about with truth, and having on the breastplate of righteousness;", note: "TRUTH around the loins (the center of strength and generation) — honesty as the belt holding everything up. RIGHTEOUSNESS as the breastplate — guarding the HEART: right living as cardiac armor. The pieces aren't mystical; they're character: truthfulness and integrity, worn like clothing." },
+{ n: 16, t: "Above all, taking the shield of faith, wherewith ye shall be able to quench all the fiery darts of the wicked.", note: "'ABOVE ALL, the shield of FAITH' — the shield is the priority piece: faith as the mobile defense that 'quenches FIERY DARTS.' Darts are specific: accusations, temptations, despair-thoughts — each one extinguished on contact with trust. Note: the shield quenches; it doesn't argue. You don't debate darts — you raise the shield." },
+{ n: 17, t: "And take the helmet of salvation, and the sword of the Spirit, which is the word of God:", note: "The HELMET of salvation — guarding the HEAD: the mind, thoughts, imagination. Salvation worn on the skull: what you believe about your rescue shapes what you think. And the SWORD — the only OFFENSIVE piece — 'which IS the word of God': the spoken truth, wielded. Defense is character; offense is the word. That's the whole armory." },
+],
+},
+],
+},
+{
+id: "philippians4", name: "Philippians 4 — Peace", testament: "NT", order: 85,
+intro: "Written from prison: rejoice, be anxious for nothing, and the peace that passes understanding.",
+chapters: [
+{ n: 4, verses: [
+{ n: 4, t: "Rejoice in the Lord alway: and again I say, Rejoice.", note: "Written from PRISON — chains on, execution possible — and the command is REJOICE. Twice, for emphasis: 'and AGAIN I say, Rejoice.' Joy as DEFIANCE: the inner state refusing to be set by the outer cell. 'In the Lord ALWAY' — the joy has an address: not in circumstances (which change) but in the Lord (which doesn't)." },
+{ n: 6, t: "Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God.", note: "'BE CAREFUL [anxious] FOR NOTHING' — the command, not the suggestion. The method: 'IN EVERY THING' — every anxiety, no exceptions — 'by prayer... WITH THANKSGIVING.' Thanksgiving BEFORE the answer: gratitude as the solvent of anxiety. You don't wait to feel peaceful to give thanks; you give thanks and peace comes." },
+{ n: 7, t: "And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus.", note: "'The peace... which PASSETH ALL UNDERSTANDING' — it doesn't come FROM understanding; it PASSES it: peace that makes no sense to the anxious mind. 'Shall KEEP [guard, garrison] your hearts and minds' — peace as a SENTRY, standing watch over the heart and mind. The anxious heart gets a guard posted. That's the promise." },
+{ n: 13, t: "I can do all things through Christ which strengtheneth me.", note: "The most quoted — and most ripped-from-context — verse in the letter. 'ALL THINGS' here means all things IN THE CONTEXT: need and abundance, hunger and fullness (v.12) — contentment in every state, not achievement of every goal. 'Through Christ which STRENGTHENETH me' — the strength is supplied, not generated. The verse is about ENDURANCE, not accomplishment." },
+],
+},
+],
+},
+{
+id: "james1", name: "James 1 — Wisdom and Trials", testament: "NT", order: 86,
+intro: "The most practical epistle: trials, wisdom for the asking, and the mirror test.",
+chapters: [
+{ n: 1, verses: [
+{ n: 2, t: "My brethren, count it all joy when ye fall into divers temptations;", note: "'COUNT it all joy' — count, reckon, account: joy as an ACCOUNTING decision, not a feeling. 'When ye FALL INTO divers temptations [trials]' — WHEN, not if: trials are scheduled, not accidental. The teaching's use: the trial is raw material; joy is what you DECIDE to manufacture from it." },
+{ n: 5, t: "If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him.", note: "'If any of you LACK WISDOM' — the most universal condition, stated as the premise. 'Let him ASK of God, that GIVETH to all liberally, and UPBRAIDETH NOT' — God gives wisdom GENEROUSLY and never shames the asking. No 'you should know this by now.' Ask like a child, receive like a child. 'It SHALL be given' — the promise is absolute." },
+{ n: 23, t: "For if any be a hearer of the word, and not a doer, he is like unto a man beholding his natural face in a glass:", note: "The MIRROR test: hearer-only is the man who looks in the mirror and walks away unchanged. The word is a MIRROR — its whole function is showing you your face. Hearing without doing is seeing without acting: the information entered and exited without touching the life. James's whole epistle is this verse expanded." },
+],
+},
+],
+},
+];
+for (const b of SCRIPTURE_B7) SCRIPTURE.push(b);

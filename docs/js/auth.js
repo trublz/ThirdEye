@@ -204,6 +204,33 @@ function teSubmit() {
     });
 }
 
+/* Google / Facebook login through Firebase. The matching provider must be
+ * switched on in the Firebase console (Authentication → Sign-in method). */
+function teSocialLogin(which) {
+  const errBox = document.getElementById("teErr");
+  const err = (m) => { if (errBox) errBox.innerHTML = `<div class="warn">${m}</div>`; };
+  if (!TE_FIREBASE_READY) { err("Connect the cloud first — paste your config in the box above."); return; }
+  let prov = null;
+  try {
+    if (which === "google") prov = new firebase.auth.GoogleAuthProvider();
+    else if (which === "facebook") prov = new firebase.auth.FacebookAuthProvider();
+  } catch (e) { prov = null; }
+  if (!prov) { err("Couldn't start that login — try again."); return; }
+  firebase.auth().signInWithPopup(prov)
+    .then(() => { location.hash = "#/"; })
+    .catch((e) => {
+      const map = {
+        "auth/popup-blocked": "Your browser blocked the popup — allow popups and try again.",
+        "auth/popup-closed-by-user": "The login window closed before finishing — try again.",
+        "auth/account-exists-with-different-credential": "That account already exists with a different login — use the way you signed up first.",
+        "auth/operation-not-allowed": "That login isn't switched on in the Firebase console yet.",
+        "auth/cancelled-popup-request": "Try again.",
+        "auth/network-request-failed": "No connection — check your signal and try again.",
+      };
+      err(map[e.code] || "Hmm — that didn't work. Try again.");
+    });
+}
+
 function vLogin() {
   const statsCard = `<div class="card" style="text-align:center"><div id="teStats">${teStatsHTML()}</div></div>`;
   if (TE_FIREBASE_READY && teUser) {
@@ -236,6 +263,11 @@ function vLogin() {
       <p class="sub" style="text-align:center;margin:12px 0 0">${isLogin
         ? `New here? <a href="javascript:void(0)" onclick="teSetMode('signup')" style="color:var(--gold)">Create an account</a>`
         : `Already walking? <a href="javascript:void(0)" onclick="teSetMode('login')" style="color:var(--gold)">Log in</a>`}</p>
+      <p class="sub" style="text-align:center;margin:14px 0 6px">— or continue with —</p>
+      <div style="display:flex;gap:8px">
+        <button class="btn btn-ghost" style="flex:1" onclick="teSocialLogin('google')">G&nbsp; Google</button>
+        <button class="btn btn-ghost" style="flex:1" onclick="teSocialLogin('facebook')">f&nbsp; Facebook</button>
+      </div>
     </div>
     ${statsCard}
   </div>`;

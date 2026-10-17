@@ -560,9 +560,12 @@ const routes = [
   [/^#\/journal$/, vJournal],
   [/^#\/practice$/, vPractice],
   [/^#\/journey$/, vJourney],
+  [/^#\/login$/, (m) => vLogin()],
 ];
 function render() {
   stopTone();
+  // login gate (auth.js) — shows splash / login page instead of the route when needed
+  if (typeof teGate === "function") { const g = teGate(); if (g !== null) { if (g) app.innerHTML = g; window.scrollTo(0, 0); return; } }
   const h = location.hash || "#/";
   for (const [re, fn] of routes) {
     const m = h.match(re);

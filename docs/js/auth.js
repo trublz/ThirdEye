@@ -5,8 +5,9 @@
  *  2. Build → Authentication → Sign-in method → enable "Email/Password".
  *  3. Build → Firestore Database → Create database → production mode → pick a region.
  *  4. Firestore → Rules tab → paste the rules from the comment at the bottom of this file → Publish.
- *  5. Project settings (gear) → Your apps → Web (</>) → copy the firebaseConfig values
- *     into TE_FIREBASE_CONFIG below (they are public-by-design client keys, not secrets).
+ *  5. Project settings (gear) → Your apps → Web (</>) → copy the firebaseConfig block.
+ *     In the app's login page you'll find a one-time "connect the cloud" box —
+ *     paste it there. It stays in the phone's own storage; it is never sent anywhere.
  * Until the config is pasted, the login page shows in preview mode with an "enter anyway" bypass.
  */
 
@@ -16,7 +17,18 @@ const TE_FIREBASE_CONFIG = {
   projectId: "PASTE_YOURS_HERE",
   appId: "PASTE_YOURS_HERE",
 };
-const TE_FIREBASE_READY = TE_FIREBASE_CONFIG.apiKey !== "PASTE_YOURS_HERE";
+/* The phone's own saved config wins over the baked-in placeholder. */
+function teStoredConfig() {
+  try {
+    const raw = localStorage.getItem("te_firebase_config");
+    if (!raw) return null;
+    const c = JSON.parse(raw);
+    if (c && c.apiKey && c.apiKey !== "PASTE_YOURS_HERE") return c;
+  } catch (e) {}
+  return null;
+}
+function teActiveConfig() { return teStoredConfig() || TE_FIREBASE_CONFIG; }
+const TE_FIREBASE_READY = teActiveConfig().apiKey !== "PASTE_YOURS_HERE";
 
 let teUser = null;
 let teAuthResolved = false;
@@ -40,7 +52,7 @@ async function teInitFirebase() {
     await teLoadScript("https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js");
     await teLoadScript("https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js");
     await teLoadScript("https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js");
-    firebase.initializeApp(TE_FIREBASE_CONFIG);
+    firebase.initializeApp(teActiveConfig());
     const auth = firebase.auth();
     auth.onAuthStateChanged((u) => {
       teUser = u;
@@ -133,6 +145,28 @@ function teGate() {
 
 function teSetMode(m) { teAuthMode = m; render(); }
 function tePreview() { store.set("te_preview", 1); location.hash = "#/"; render(); }
+/* One-time cloud connect: he pastes his own Firebase web config; it is saved
+ * in the phone's own localStorage and never leaves the device. */
+function teSaveConfig() {
+  const el = document.getElementById("teCfg");
+  const errBox = document.getElementById("teCfgErr");
+  const err = (m) => { if (errBox) errBox.innerHTML = `<div class="warn">${m}</div>`; };
+  let raw = (el.value || "").trim();
+  if (!raw) { err("Paste your config first."); return; }
+  const m = raw.match(/\{[\s\S]*\}/);
+  if (!m) { err("That doesn't look like a config — copy the {...} block from Firebase."); return; }
+  try {
+    // Firebase shows it as a JS object (unquoted keys) — normalize to JSON.
+    const json = m[0]
+      .replace(/([{,]\s*)([A-Za-z_$][\w$]*)\s*:/g, '$1"$2":')
+      .replace(/,\s*}/g, "}")
+      .replace(/,\s*]/g, "]");
+    const c = JSON.parse(json);
+    if (!c.apiKey || !c.projectId) { err("Config's missing pieces — copy the full block and try again."); return; }
+    localStorage.setItem("te_firebase_config", JSON.stringify(c));
+    location.reload();
+  } catch (e) { err("Couldn't read that — make sure it's the full {...} block."); }
+}
 function teLogout() {
   try { if (window.firebase) firebase.auth().signOut(); } catch (e) {}
   teUser = null;
@@ -180,9 +214,12 @@ function vLogin() {
     ${statsCard}`;
   }
   const setup = TE_FIREBASE_READY ? "" :
-    `<div class="card gold"><h3>🔌 Cloud not connected yet</h3>
-     <p class="sub">This is the real login page — it goes live the moment the cloud keys are in. For now:</p>
-     <button class="btn btn-gold btn-block" onclick="tePreview()">Enter the app for now →</button></div>`;
+    `<div class="card gold"><h3>🔌 One-time cloud connect</h3>
+     <p class="sub">Paste your Firebase web config below — the <span style="font-family:monospace">firebaseConfig = {...}</span> block from your Firebase console. It stays on your phone only, never sent anywhere.</p>
+     <textarea id="teCfg" rows="6" style="width:100%;box-sizing:border-box" placeholder="Paste your firebaseConfig {...} block here"></textarea>
+     <div id="teCfgErr"></div>
+     <button class="btn btn-gold btn-block" onclick="teSaveConfig()">Connect the cloud →</button>
+     <p class="sub" style="text-align:center;margin:10px 0 0">Not yet? <a href="javascript:void(0)" onclick="tePreview()" style="color:var(--gold)">Enter the app for now →</a></p></div>`;
   const isLogin = teAuthMode === "login";
   return `<div style="max-width:430px;margin:26px auto">
     <div style="text-align:center;margin-bottom:14px"><div style="font-size:64px">👁️</div>
